@@ -1,0 +1,54 @@
+.social {
+  display: flex;
+  margin-right: 22px;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+  &__link {
+    display: block;
+
+    circle,
+    path {
+      transition: all var(--transition-time);
+    }
+
+    &--tg {
+      &:hover {
+        circle {
+          stroke: #00a3ff;
+        }
+
+        path {
+          fill: #00a3ff;
+        }
+      }
+    }
+
+    &--wa {
+      &:hover {
+        circle {
+          stroke: #01bf2b;
+        }
+
+        path {
+          fill: #01bf2b;
+        }
+      }
+    }
+
+    @include mq(375) {
+      svg {
+        width: 19px;
+        height: 19px;
+      }
+    }
+  }
+
+  @include mq(375) {
+    margin-right: 10px;
+  }
+}

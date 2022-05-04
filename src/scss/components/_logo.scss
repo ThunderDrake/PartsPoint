@@ -1,0 +1,9 @@
+.logo {
+  @include mq(1042) {
+    width: 180px;
+  }
+
+  @include mq(375) {
+    width: 115px;
+  }
+}

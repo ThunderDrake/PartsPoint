@@ -1,0 +1,141 @@
+.cooperation {
+  position: relative;
+  margin-bottom: 7.8em;
+
+  &__title {
+    margin-bottom: 1.15em;
+  }
+
+  &__grid {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: repeat(12, 1fr);
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 130%;
+    row-gap: 2.6em;
+
+    &-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      color: #f4f0f0;
+      background-image: linear-gradient(209.69deg, rgba(97 102 111 / 65.1%) 11.86%, rgba(38 39 47 / 63.7%) 84.33%);
+
+      &-title {
+        margin: 0;
+        font-weight: 400;
+        font-size: 1em;
+      }
+
+      &-number {
+        position: absolute;
+        left: 40px;
+        top: -25px;
+        z-index: 1;
+        font-family: "BebasNeue", sans-serif;
+        font-weight: 700;
+        font-size: 2em;
+        line-height: 120%;
+        letter-spacing: 0.025em;
+        text-align: center;
+        color: var(--color-main);
+
+        &::before {
+          content: "шаг";
+          position: relative;
+          z-index: 2;
+          display: inline-block;
+          margin-right: -4px;
+          font-family: "segoeUI", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 130%;
+          color: #dedede;
+          transform: translateY(-6px);
+        }
+      }
+    }
+
+    &-image {
+      margin-right: 25px;
+
+      @include mq(1042) {
+        width: 45px;
+        height: 45px;
+      }
+    }
+
+    &-item--1,
+    &-item--2,
+    &-item--3 {
+      grid-column: 4 span;
+      padding: 2.5em 2.3em;
+
+      @include mq(1015) {
+        padding: 35px 15px;
+      }
+
+      @include mq(768) {
+        grid-column: 3 span;
+      }
+    }
+
+    &-item--4,
+    &-item--5,
+    &-item--6,
+    &-item--7 {
+      grid-column: 3 span;
+      padding: 45px 25px;
+
+      .cooperation__grid-item-number {
+        left: 25px;
+      }
+
+      @include mq(1042) {
+        padding: 35px 15px;
+      }
+
+      @include mq(1015) {
+        grid-column: 4 span;
+      }
+
+      @include mq(768) {
+        grid-column: 3 span;
+      }
+    }
+
+    @include mq(768) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    @include mq(560) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__decor-1 {
+    right: -4%;
+    bottom: -4%;
+    width: 595px;
+    height: 595px;
+    background-image: url("../img/cooperation__decor-1.png");
+    background-repeat: no-repeat;
+  }
+
+  &__decor-2 {
+    left: -2%;
+    bottom: 30%;
+    width: 420px;
+    height: 445px;
+    background-image: url("../img/cooperation__decor-2.png");
+    background-repeat: no-repeat;
+  }
+
+  &__decor-1,
+  &__decor-2 {
+    position: absolute;
+    z-index: -1;
+  }
+}

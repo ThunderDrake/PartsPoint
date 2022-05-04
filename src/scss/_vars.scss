@@ -1,0 +1,24 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "SegoeUI", sans-serif;
+  --content-width: 1280px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --color-white: #fff;
+  --color-black: #000;
+  --color-main: #e31b40;
+  --color-main-dark: #7a1717;
+  --color-text-light: #f2f1f1;
+  --color-text-dark: #4b4848;
+  --color-text-red: #960b1b;
+  --gradient-white: linear-gradient(267.94deg, #d6d5d5 -1.13%, #fff 27.21%, #fff 58.29%, #f7f7f7 100.79%);
+  --gradient-red: linear-gradient(264.78deg, #960b1b -5.79%, #ca182c 37.97%, #da3b4d 49.43%, #960b1b 100.98%);
+  --gradient-gray: linear-gradient(209.69deg, rgba(89 92 99 / 65.1%) 11.86%, rgba(51 43 36 / 63.7%) 84.33%);
+
+  // animations
+  --transition-time: 0.3s;
+}

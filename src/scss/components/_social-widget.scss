@@ -1,0 +1,135 @@
+.social-widget {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column-reverse;
+
+  &__button {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 88px;
+    height: 88px;
+    background-image: linear-gradient(264.78deg, #960b1b -5.79%, #ca182c 37.97%, #da3b4d 49.43%, #960b1b 100.98%);
+    transition: all var(--transition-time);
+
+    &:hover {
+      background-image: none;
+      background-color: #fff;
+
+      svg {
+        fill: #960b1b;
+      }
+    }
+
+    @include mq(768) {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__icon {
+    width: 44px;
+    height: 44px;
+    fill: #fff;
+    transition: all var(--transition-time);
+
+    @include mq(768) {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  &__link-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    transition: transform var(--transition-time);
+
+    svg {
+      fill: #fff;
+    }
+
+    &--tg {
+      background-image: linear-gradient(264.78deg, #3483df -5.79%, #14aafe 49.83%, #256ec5 101.88%);
+      transform: translateY(0%);
+      transition: all var(--transition-time);
+
+      &:hover {
+        background-image: none;
+        background-color: #fff;
+
+        svg {
+          fill: #2693ec;
+        }
+      }
+    }
+
+    &--wa {
+      background-image: linear-gradient(264.78deg, #31d84c -5.79%, #15dd11 49.83%, #43a022 101.88%);
+      transform: translateY(120%);
+      transition: all var(--transition-time);
+
+      &:hover {
+        background-image: none;
+        background-color: #fff;
+
+        svg {
+          fill: #27d937;
+        }
+      }
+    }
+
+    &--phone {
+      background-image: linear-gradient(264.78deg, #960b1b -5.79%, #ca182c 37.97%, #da3b4d 49.43%, #960b1b 100.98%);
+      transform: translateY(240%);
+      transition: all var(--transition-time);
+
+      &:hover {
+        background-image: none;
+        background-color: #fff;
+
+        svg {
+          fill: #960b1b;
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    transform: translateY(50%);
+    transition: transform var(--transition-time);
+
+    @include mq(768) {
+      transform: translateY(40%);
+    }
+  }
+
+  &:hover {
+    .social-widget__list {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .social-widget__link {
+      transform: translateY(0);
+    }
+  }
+}

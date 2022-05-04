@@ -1,0 +1,14 @@
+.phone {
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: var(--color-light-text);
+  transition: color var(--transition-time);
+
+  &:hover {
+    color: var(--color-main);
+  }
+
+  @include mq(890) {
+    font-size: 1.5rem;
+  }
+}

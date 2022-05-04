@@ -1,0 +1,120 @@
+.form {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 130%;
+  color: var(--color-text-light);
+
+  &__subtitle {
+    margin-bottom: 1.1em;
+    font-family: "BebasNeue", sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 120%;
+    letter-spacing: 0.025em;
+  }
+
+  &__text {
+    margin-bottom: 0.75em;
+  }
+
+  &__buttons {
+    display: flex;
+    margin-bottom: 2em;
+
+    .form__button {
+      font-size: 0.7em;
+      cursor: pointer;
+    }
+
+    label:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__input {
+    position: relative;
+    display: block;
+    margin-bottom: 1em;
+    height: 100px;
+
+    &-field {
+      position: relative;
+      border-radius: 4px;
+      padding: 28px 58px 34px 86px;
+      width: 100%;
+      height: 100%;
+      max-width: 400px;
+      font-size: 1.2em;
+      letter-spacing: 0.1em;
+      color: var(--color-text-dark);
+
+      &::placeholder {
+        letter-spacing: 0.1em;
+        color: #c4c4c4;
+      }
+
+      @include mq(460) {
+        padding: 18px 0 22px;
+        padding-left: 44px;
+      }
+    }
+
+    &--tel {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 40px;
+        top: 50px;
+        z-index: 1;
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/phone.svg");
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+
+        @include mq(460) {
+          left: 18px;
+          top: 38px;
+          width: 18px;
+          height: 18px;
+          background-size: cover;
+        }
+      }
+    }
+
+    @include mq(460) {
+      height: 70px;
+    }
+  }
+
+  &__button-submit {
+    max-width: 400px;
+  }
+
+  @include mq(1024) {
+    max-width: 475px;
+  }
+}
+
+input[type="radio"]:checked + .social-button--tg {
+  color: var(--color-white);
+  background-color: #00a3ff;
+
+  .social-button__icon {
+    stroke: var(--color-white);
+  }
+}
+
+input[type="radio"]:checked + .social-button--wa {
+  color: var(--color-white);
+  background-color: #01bf2b;
+
+  .social-button__icon {
+    stroke: var(--color-white);
+  }
+}
+
+.just-validate-error-field {
+  border: 3px solid rgb(184 17 17);
+}
