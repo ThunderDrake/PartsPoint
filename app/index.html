@@ -1,1 +1,965 @@
-<!DOCTYPE html><html lang="ru" class="page"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> --><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta name="theme-color" content="#111111"><title>PartsPoint</title><link rel="preload" href="fonts/SegoeUI.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/SegoeUILight.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/SegoeUIBold.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/SegoeUIBoldItalic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/SegoeUIItalic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/SegoeUISemibold.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/BebasNeueBook.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="fonts/BebasNeueBold.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="css/vendor.css"><link rel="stylesheet" href="css/main.css"><script defer="defer" src="js/main.js"></script></head><body class="page__body"><div class="site-container"><header class="header" id="header"><div class="container header__container"><div class="header__info-wrapper"><div class="header__logo-block"><img loading="lazy" src="img/logo.svg" class="header__logo logo" width="220" height="55" alt="PartsPoint"> <span class="header__logo-text">Франшиза интернет-магазина автозапчастей</span></div><ul class="header__social social list-reset"><li class="social__item"><!-- TODO: Добавить ссылки на соцсети --> <a class="social__link social__link--tg" href=""><svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="14.2793" cy="14.2793" r="14.0006" stroke="#F2F1F1" stroke-width="0.557396"/><path fill-rule="evenodd" clip-rule="evenodd" d="M13.3992 10.7408C9.21346 12.2477 5.7539 13.5019 5.71124 13.528C5.60787 13.5912 5.51184 13.7428 5.51172 13.8431C5.51153 13.9663 5.58807 14.1112 5.6879 14.1766C5.73717 14.2089 6.60083 14.5209 7.60718 14.87C8.61353 15.2191 9.45217 15.5196 9.47084 15.5378C9.48948 15.5561 9.81833 16.5164 10.2016 17.6718C10.5849 18.8273 10.9204 19.8169 10.9471 19.871C10.9739 19.925 11.0391 19.9939 11.0921 20.0241C11.2007 20.0858 11.4229 20.0968 11.5257 20.0455C11.5627 20.027 12.0438 19.6685 12.5949 19.2487C13.7982 18.3321 13.7579 18.3602 13.9209 18.326C14.1783 18.2721 14.2285 18.2996 15.7414 19.3239C18.3961 21.1214 18.2027 20.9982 18.3706 20.9982C18.5445 20.9982 18.6673 20.9267 18.7504 20.777C18.8333 20.6278 21.5352 8.45011 21.5116 8.33235C21.4755 8.15304 21.274 7.99752 21.0809 8.00003C21.0417 8.00053 17.5848 9.23385 13.3992 10.7408ZM18.0476 10.7186C18.0682 10.7378 18.0851 10.7749 18.0851 10.801C18.0851 10.8272 16.9349 11.8454 15.5291 13.0638C12.1097 16.0274 11.9744 16.1473 11.8833 16.2923C11.7628 16.4842 11.7165 16.6776 11.6091 17.4384C11.5528 17.8371 11.4911 18.167 11.4659 18.2043C11.42 18.2723 11.2903 18.2924 11.2088 18.2442C11.1856 18.2305 10.9828 17.6234 10.7581 16.8951C10.324 15.4883 10.2991 15.3651 10.4031 15.1412C10.4309 15.0814 10.4994 14.9922 10.5552 14.9431C10.6805 14.8329 17.8942 10.6844 17.9616 10.6839C17.9882 10.6837 18.0269 10.6993 18.0476 10.7186Z" fill="white"/></svg></a></li><li class="social__item"><a class="social__link social__link--wa" href=""><svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.1041 7.44177C13.1045 7.53906 12.3507 7.75477 11.5332 8.17743C10.2851 8.82271 9.27726 9.84953 8.65414 11.1108C8.41474 11.5954 8.30192 11.8924 8.1768 12.3676C8.01906 12.9666 7.97313 13.3307 7.97171 13.9934C7.97101 14.3233 7.98462 14.6813 8.00319 14.8206C8.14433 15.8799 8.47701 16.7928 9.03339 17.6474L9.21883 17.9323L8.80689 19.1467C8.58031 19.8146 8.39851 20.3646 8.40289 20.369C8.40729 20.3734 8.97397 20.1971 9.66221 19.9772C10.3505 19.7574 10.9228 19.5775 10.934 19.5775C10.9453 19.5775 11.0515 19.6377 11.1701 19.7113C11.2887 19.785 11.5372 19.9176 11.7223 20.006C13.3962 20.806 15.3096 20.8744 17.0235 20.1957C18.9654 19.4267 20.4569 17.7444 20.9893 15.7225C21.1524 15.1032 21.1938 14.7638 21.1938 14.0451C21.1938 13.3264 21.1524 12.9869 20.9893 12.3676C20.3648 9.99572 18.461 8.15202 16.0587 7.59257C15.6551 7.49857 15.2351 7.45095 14.7255 7.44141C14.4407 7.43606 14.1611 7.43622 14.1041 7.44177ZM12.5252 10.5095C12.568 10.5317 12.6281 10.5947 12.6587 10.6494C12.7359 10.7875 13.3653 12.3013 13.3836 12.3928C13.407 12.51 13.2923 12.7091 13.035 12.9981C12.7664 13.2995 12.7087 13.3963 12.7326 13.505C12.776 13.7023 13.3748 14.4952 13.7437 14.8439C14.3161 15.385 15.1813 15.8988 15.5669 15.9266C15.7651 15.9409 15.8374 15.8849 16.1406 15.4818C16.2781 15.299 16.4248 15.1153 16.4666 15.0736C16.5665 14.9739 16.7147 14.9527 16.8809 15.0145C17.0942 15.0938 18.3978 15.7277 18.4893 15.7967L18.577 15.8627L18.5625 16.1366C18.5254 16.8398 18.2783 17.205 17.625 17.5225C17.0039 17.8244 16.5177 17.8161 15.5659 17.4876C14.2889 17.0468 13.6111 16.6258 12.6926 15.7029C12.233 15.2411 11.9064 14.8506 11.5329 14.3165C10.9173 13.4363 10.6813 12.7566 10.7515 12.0668C10.8079 11.5137 11.0014 11.1054 11.3923 10.7151C11.5814 10.5263 11.8289 10.4485 12.2013 10.4609C12.3593 10.4662 12.4751 10.4836 12.5252 10.5095Z" fill="white"/><circle cx="14.8135" cy="14.2793" r="14.0006" stroke="#F2F1F1" stroke-width="0.557396"/></svg></a></li></ul><a class="header__phone phone" href="tel:89281498075">8-928-149-80-75</a></div><button class="header__burger burger btn-reset" aria-label="Открыть меню" aria-expanded="false" data-burger><span class="burger__text">Меню</span> <svg class="burger__icon"><use xlink:href="img/sprite.svg#burger"></use></svg></button><div class="header__menu menu" data-menu aria-hidden="true"><div class="menu__bg" data-menu-overlay></div><div class="menu__content"><svg class="menu__close" data-menu-item><use xlink:href="img/sprite.svg#close"></use></svg><nav class="menu__nav"><div class="menu__title">Навигация по сайту</div><ul class="menu__list list-reset"><li class="menu__list-item"><a class="menu__list-link" href="#advantages" data-menu-item>Почему выгодно</a></li><li class="menu__list-item"><a class="menu__list-link" href="#benefit" data-menu-item>Преимущества</a></li><li class="menu__list-item"><a class="menu__list-link" href="#cooperation" data-menu-item>Схема сотрудничества</a></li><li class="menu__list-item"><a class="menu__list-link" href="#calculator" data-menu-item>Калькулятор</a></li><li class="menu__list-item"><a class="menu__list-link" href="#about" data-menu-item>О компании</a></li><li class="menu__list-item"><a class="menu__list-link" href="#review" data-menu-item>Отзывы</a></li><li class="menu__list-item"><a class="menu__list-link" href="#contact" data-menu-item>Контакты</a></li></ul></nav><div class="menu__col"><div class="menu__contacts"><div class="menu__title">Навигация по сайту</div><a class="menu__phone phone" href="tel:89281498075">8-928-149-80-75</a></div><div class="menu__social"><div class="menu__title">Пишите в мессенджеры</div><div class="menu__social-text"><img loading="lazy" src="img/pulse.svg" class="menu__social-icon" width="16" height="16" alt="">Сейчас мы онлайн. Пишите</div><ul class="menu__social-list list-reset"><li class="menu__social-item"><!-- TODO: Добавить ссылки на соц сети --> <a class="menu__social-link social-button social-button--tg" href="" target="_blank">Telegram <svg class="social-button__icon"><use xlink:href="img/sprite.svg#tg-button-icon"></use></svg></a></li><li class="menu__social-item"><!-- TODO: Добавить ссылки на соц сети --> <a class="menu__social-link social-button social-button--wa" href="" target="_blank">Whatsapp <svg class="social-button__icon"><use xlink:href="img/sprite.svg#wa-button-icon"></use></svg></a></li></ul></div><div class="menu__mail"><div class="menu__title">Почта</div><a class="menu__mail-link" href="mailto:podand1979@yandex.ru">podand1979@yandex.ru</a></div><div class="button__wrapper menu__button"><button class="btn-reset button button--main" data-graph-path="presentation">Скачать презентацию <span>и финансовую модель</span></button></div></div></div></div></div></header><main class="main"><section class="hero"><div class="container hero__container"><div class="hero__text-block"><h1 data-aos="fade-up" class="hero__title">Открой <span>интернет-магазин автозапчастей</span> в своём городе за 3 дня и начни зарабатывать от 2 млн. в год</h1><div class="hero__image-block"><picture><source media="(max-width: 768px)" srcset="img/hero-image-mobile.avif" type="image/avif"><source media="(max-width: 768px)" srcset="img/hero-image-mobile.webp" type="image/webp"><source srcset="img/hero-image.avif" type="image/avif"><source srcset="img/hero-image.webp" type="image/webp"><source media="(max-width: 768px)" srcset="img/hero-image-mobile.png"><img loading="lazy" src="img/hero-image.png" class="hero__image" width="1010" height="761" alt="Изображение владельца компании"></picture></div><div class="hero__card-list"><div class="hero__card"><img loading="lazy" src="img/hero__card-icon-1.svg" class="hero__card-icon" width="55" height="55" alt=""><div class="hero__card-title">Чистая прибыль от <span>150 000 руб</span> в месяц</div></div><div class="hero__card"><img loading="lazy" src="img/hero__card-icon-2.svg" class="hero__card-icon" width="55" height="55" alt=""><div class="hero__card-title hero__card-title--fixed">Окупаемость <span>7 месяцев</span></div></div><div class="hero__card"><img loading="lazy" src="img/hero__card-icon-3.svg" class="hero__card-icon" width="55" height="55" alt=""><div class="hero__card-title">Средняя маржа <span>60%</span></div></div></div><div class="button__wrapper hero__button"><button class="btn-reset button button--main" data-graph-path="presentation">Скачать презентацию <span>и финансовую модель</span></button></div></div></div><div class="detail-1"></div><div class="detail-2"></div><div class="detail-3"></div><div class="social-widget"><button class="btn-reset social-widget__button"><svg class="social-widget__icon"><use xlink:href="img/sprite.svg#social-button"></use></svg></button><ul class="list-reset social-widget__list"><li class="social-widget__item"><a class="social-widget__link social-widget__link--phone" href=""><svg class="social-widget__link-icon"><use xlink:href="img/sprite.svg#social-button-phone"></use></svg></a></li><li class="social-widget__item"><a class="social-widget__link social-widget__link--wa" href=""><svg class="social-widget__link-icon"><use xlink:href="img/sprite.svg#social-button-wa"></use></svg></a></li><li class="social-widget__item"><a class="social-widget__link social-widget__link--tg" href=""><svg class="social-widget__link-icon"><use xlink:href="img/sprite.svg#social-button-tg"></use></svg></a></li></ul></div></section><section class="advantages" id="advantages"><div class="container advantages__container"><h2 data-aos="fade-up" class="section-title advantages__title">Почему франшиза магазина автозапчастей — это выгодный бизнес</h2><div class="advantages__list"><div class="advantages__col advantages__col--second"><div class="advantages__item"><div class="advantages__number">2</div><h3 class="advantages__item-title">Постоянно растущий спрос на запчасти.</h3><div class="advantages__item-descr">Выгоднее ремонтировать, чем покупать новый.</div></div><div class="advantages__item"><div class="advantages__number">3</div><h3 class="advantages__item-title">Бизнес не зависит от сезона.</h3><div class="advantages__item-descr">Ремонт требуется круглый год.</div></div><div class="advantages__item"><div class="advantages__number">4</div><h3 class="advantages__item-title">Автоматизация всех процессов</h3></div></div><div class="advantages__col advantages__col--first"><div class="advantages__item"><div class="advantages__number">1</div><h3 class="advantages__item-title">Вы получаете уже полностью готовый бизнес</h3></div><div class="advantages__image-block"><picture><source srcset="img/advantages-book.avif" type="image/avif"><source srcset="img/advantages-book.webp" type="image/webp"><img loading="lazy" src="img/advantages-book.png" class="advantages__image" width="650" height="545" alt=""></picture><div class="pdf-icon__wrapper"><div class="pdf-icon">PDF</div></div></div></div><div class="advantages__col advantages__col--third"><div class="advantages__item"><div class="advantages__number">5</div><h3 class="advantages__item-title">Закупочные цены с дилерской скидкой</h3></div><div class="advantages__item"><div class="advantages__number">6</div><h3 class="advantages__item-title">Средний годовой оборот одной точки 11 880 000 руб.</h3></div><div class="advantages__item"><div class="advantages__number">7</div><h3 class="advantages__item-title">Средний чек 3000 руб</h3></div><div class="advantages__item"><div class="advantages__number">8</div><h3 class="advantages__item-title">Более 4000 клиентов в год</h3></div></div></div><div class="advantages__button-wrapper"><div class="button__wrapper advantages__button"><button class="btn-reset button button--main" data-graph-path="business">Скачать бизнес-план</button></div></div></div><div class="advantages__decor-1"></div><div class="advantages__decor-2"></div></section><section class="benefit" id="benefit"><div class="container benefit__container"><h2 data-aos="fade-up" class="section-title benefit__title">Что даём вам именно мы, преимущества франшизы</h2><div class="benefit__list"><div class="benefit__item"><div class="benefit__item-image"><picture><source srcset="img/benefit-image-1.avif" type="image/avif"><source srcset="img/benefit-image-1.webp" type="image/webp"><img loading="lazy" src="img/benefit-image-1.png" class="benefit__image" width="432" height="270" alt="Помогаем в открытии розничного магазина"></picture></div><div class="benefit__item-text"><h3 class="benefit__item-title">Помогаем в открытии розничного магазина</h3><ul class="benefit__item-list list-reset"><li class="benefit__item-list-item">консультируем по подбору расположения торговой точки,</li><li class="benefit__item-list-item">предоставляем готовый дизайн магазина,</li><li class="benefit__item-list-item">подбираем и обучаем персонал,</li><li class="benefit__item-list-item">помогаем с подбором торгового оборудования,</li><li class="benefit__item-list-item">помогаем с оформлением контрольно-кассового оборудования,</li><li class="benefit__item-list-item">предоставляем макеты рекламной продукции</li></ul></div></div><div class="benefit__item"><div class="benefit__item-image"><picture><source srcset="img/benefit-image-2.avif" type="image/avif"><source srcset="img/benefit-image-2.webp" type="image/webp"><img loading="lazy" src="img/benefit-image-2.png" class="benefit__image" width="432" height="270" alt="Настраиваем онлайн-магазин и рекламу"></picture></div><div class="benefit__item-text"><h3 class="benefit__item-title">Настраиваем онлайн-магазин и рекламу</h3><ul class="benefit__item-list list-reset"><li class="benefit__item-list-item">вы получаете полностью готовый к работе интернет-магазин,</li><li class="benefit__item-list-item">программный комплекс позволяет вам и клиентам видеть складские остатки товара,</li><li class="benefit__item-list-item">простой и удобный интерфейс,</li><li class="benefit__item-list-item">быстрый доступ к истории заказов, информации о клиентах и поставщиках,</li><li class="benefit__item-list-item">моментальные рассылки по клиентской базе</li></ul></div></div><div class="benefit__item"><div class="benefit__item-image"><picture><source srcset="img/benefit-image-3.avif" type="image/avif"><source srcset="img/benefit-image-3.webp" type="image/webp"><img loading="lazy" src="img/benefit-image-3.png" class="benefit__image" width="432" height="270" alt="Обучаем персонал, оказываем постоянную поддержку и сопровождение"></picture></div><div class="benefit__item-text"><h3 class="benefit__item-title">Обучаем персонал, оказываем постоянную поддержку и сопровождение</h3><ul class="benefit__item-list list-reset"><li class="benefit__item-list-item">бесплатное обучение,</li><li class="benefit__item-list-item">фирменная корпоративная одежда,</li><li class="benefit__item-list-item">настройка корпоративной электронной почты</li></ul></div></div><div class="benefit__item"><div class="benefit__item-image"><picture><source srcset="img/benefit-image-4.avif" type="image/avif"><source srcset="img/benefit-image-4.webp" type="image/webp"><img loading="lazy" src="img/benefit-image-4.png" class="benefit__image" width="432" height="270" alt="Настраиваем онлайн-магазин и рекламу"></picture></div><div class="benefit__item-text"><h3 class="benefit__item-title">Настраиваем онлайн-магазин и рекламу</h3><ul class="benefit__item-list list-reset"><li class="benefit__item-list-item">размещаем контакты франчайзи на нашем официальном сайте partspoint.su,</li><li class="benefit__item-list-item">публикуем новости и материалы об открытии нового магазина на своих страницах в социальных сетях,</li><li class="benefit__item-list-item">помогаем в создании и оформлении своей страницы,</li><li class="benefit__item-list-item">оказываем маркетинговую поддержку</li></ul></div></div></div><div class="benefit__footer"><div class="benefit__footer-left"><div class="benefit__footer-subtitle">Самостоятельный запуск магазина обойдётся Вам минимум</div><div class="benefit__footer-income">в 1,1 млн. рублей/год</div><div class="benefit__footer-warning"><picture><source srcset="img/benefits-detail.avif" type="image/avif"><source srcset="img/benefits-detail.webp" type="image/webp"><img loading="lazy" src="img/benefits-detail.png" class="benefit__footer-warning-image" width="125" height="138" alt=""></picture><div class="benefit__footer-warning-text">При самостоятельной закупке можно вернуть далеко не весь товар и у вас со временем накопится куча никому не нужного товара.</div></div></div><div class="benefit__footer-right"><h3 class="benefit__footer-title">Запуск по франшизе в 3 раза дешевле!</h3><ul class="list-reset benefit__footer-list"><li class="benefit__footer-item">Учитывая тот факт, что <span class="benefit__footer-text--red">к сетевым компаниям поставщики намного более лояльны</span>, чем к розничным магазинам, с нами выгоднее за счёт того, что вы будете закупать товар с дополнительной скидкой.</li><li class="benefit__footer-item">У нас поставщики <span class="benefit__footer-text--red">забирают абсолютно всё, включая электротовары.</span></li></ul><div class="benefit__footer-checklist"><div class="benefit__footer-checklist-item">Открываем магазин <span class="benefit__footer-text--red">под ключ.</span></div><div class="benefit__footer-checklist-item">Отвечаем <span class="benefit__footer-text--red">на все вопросы.</span></div><div class="benefit__footer-checklist-item">Помогаем и поддерживаем <span class="benefit__footer-text--red">на всех этапах.</span></div><div class="benefit__footer-checklist-item">А главное выводим магазин на прибыль <span class="benefit__footer-text--red">за короткое время.</span></div></div></div><div class="wheel-2"></div></div><div class="benefit__button"><span class="benefit__button-text">Посмотреть и сравнить все траты можно в специальной таблице нашей презентации</span><div class="button__wrapper"><button class="btn-reset button button--main" data-graph-path="presentation">Смотреть презентацию</button></div></div></div><div class="wheel-1"></div></section><section class="cooperation" id="cooperation"><div class="container cooperation__container"><h2 data-aos="fade-up" class="section-title cooperation__title">Схема сотрудничества</h2><ul class="list-reset cooperation__grid"><li class="cooperation__grid-item cooperation__grid-item--1"><span class="cooperation__grid-item-number">01</span> <img loading="lazy" src="img/cooperation__grid-image-1.svg" class="cooperation__grid-image" width="60" height="60" alt=""><h3 class="cooperation__grid-item-title">Вы оставляете заявку</h3></li><li class="cooperation__grid-item cooperation__grid-item--2"><span class="cooperation__grid-item-number">02</span> <img loading="lazy" src="img/cooperation__grid-image-2.svg" class="cooperation__grid-image" width="60" height="60" alt=""><h3 class="cooperation__grid-item-title">Знакомимся с Вами в zoom или при личной встрече</h3></li><li class="cooperation__grid-item cooperation__grid-item--3"><span class="cooperation__grid-item-number">03</span> <img loading="lazy" src="img/cooperation__grid-image-3.svg" class="cooperation__grid-image" width="60" height="60" alt=""><h3 class="cooperation__grid-item-title">Подписываем соглашение о неразглашении</h3></li><li class="cooperation__grid-item cooperation__grid-item--4"><span class="cooperation__grid-item-number">04</span> <img loading="lazy" src="img/cooperation__grid-image-4.svg" class="cooperation__grid-image" width="60" height="60" alt=""><h3 class="cooperation__grid-item-title">Предоставляем Вам подробный бизнес-план</h3></li><li class="cooperation__grid-item cooperation__grid-item--5"><span class="cooperation__grid-item-number">05</span> <img loading="lazy" src="img/cooperation__grid-image-5.svg" class="cooperation__grid-image" width="60" height="60" alt=""><h3 class="cooperation__grid-item-title">Подписываем договор</h3></li><li class="cooperation__grid-item cooperation__grid-item--6"><span class="cooperation__grid-item-number">06</span> <img loading="lazy" src="img/cooperation__grid-image-6.svg" class="cooperation__grid-image" width="60" height="60" alt=""><h3 class="cooperation__grid-item-title">Проводим обучение и аттестацию персонала</h3></li><li class="cooperation__grid-item cooperation__grid-item--7"><span class="cooperation__grid-item-number">07</span> <img loading="lazy" src="img/cooperation__grid-image-7.svg" class="cooperation__grid-image" width="60" height="60" alt=""><h3 class="cooperation__grid-item-title">Вы начинаете зарабатывать</h3></li></ul></div><div class="cooperation__decor-1"></div><div class="cooperation__decor-2"></div></section><section class="calculator" id="calculator"><div class="container calculator__container"><h2 data-aos="fade-up" class="section-title calculator__title">Рассчитайте вашу прибыль с помощью калькулятора</h2><div class="calculator__slider"><div class="calculator__slider-title">Выберите количество клиентов в день</div><div class="calculator__slider-body" id="slider-days"></div></div><div class="calculator__slider"><div class="calculator__slider-title">Выберите период, мес</div><div class="calculator__slider-body" id="slider-mounth"></div></div><div class="calculator__block"><div class="calculator__text"><strong>Чистая прибыль</strong> за выбранный период с учетом всех расходов:</div><div class="calculator__total"><div class="calculator__total-number">1 100 000</div><span class="calculator__total-text">руб</span></div><div class="calculator__note">*Предварительный расчет</div><div class="calculator__small-text">Свяжитесь с нами для консультации, чтобы мы могли точнее рассчитать вашу выгоду с учетом всех нюансов</div><div class="button__wrapper calculator__button"><button class="btn-reset button button--main" data-graph-path="consulting">Проконсультироваться</button></div></div></div><div class="calculator__decor-1"></div><div class="calculator__decor-2"></div></section><section class="about" id="about"><div class="gradient"></div><div class="container about__container"><div class="about__content"><div class="about__left"><picture><source srcset="img/about__hero.avif" type="image/avif"><source srcset="img/about__hero.webp" type="image/webp"><img loading="lazy" src="img/about__hero.png" class="about__director-image" width="550" height="1035" alt="Фотография Директора франшизы"></picture><div class="about__director-name"><div class="about__name">Андрей поддубный</div><span class="about__position">Владелец франшизы PartsPoint</span></div><div class="about__video-block"><!-- TODO: Добавить ссылку на ВК --><div class="about__video-descr">Посмотрите полезное видео на нашей страничке <a class="about__video-link" href="#">Вконтакте</a></div><!-- TODO: Ссылка на модалку с видео --> <button class="btn-reset about__video-button" data-graph-path="" aria-label="Открыть полезное видео"><img loading="lazy" src="img/about__video-button.jpg" class="about__video-image" width="178" height="178" alt="Превью видео"></button></div><div class="about__slogan"><img loading="lazy" src="img/signature.svg" class="about__signature" width="96" height="93" alt="Подпись владельца франшизы"><div class="about__slogan-text">Главный лозунг нашего интернет-магазина: «У нас есть всё для Вашего авто, привезём быстро по разумным ценам».</div><div class="pdf-icon__wrapper"><div class="pdf-icon"><svg width="7" height="16" viewBox="0 0 7 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_i_331_2116)"><path fill-rule="evenodd" clip-rule="evenodd" d="M4.64359 0.0248653C3.91676 0.179543 3.31739 0.693527 3.11904 1.33227C3.04154 1.58181 3.02751 2.01796 3.08859 2.27767C3.22617 2.86248 3.73336 3.39944 4.3476 3.61052C4.67335 3.72247 5.14963 3.74889 5.48504 3.67365C6.36013 3.47731 7 2.72277 7 1.88719C7 1.36848 6.83638 0.978657 6.46016 0.601134C6.18223 0.322264 6.0133 0.21491 5.66545 0.0961007C5.40611 0.00752591 4.89309 -0.0282483 4.64359 0.0248653ZM2.76358 5.44189C2.26558 5.49413 1.64566 5.67337 0.695028 6.03997L0.209345 6.22729L0.0995085 6.66961C0.0391124 6.91289 -0.00542418 7.11686 0.000534745 7.1229C0.0065247 7.12891 0.166578 7.08328 0.356239 7.02143C0.979567 6.81824 1.58859 6.80125 1.95888 6.9768C2.22287 7.10193 2.34462 7.3901 2.34456 7.88946C2.34447 8.36451 2.23249 8.85612 1.65985 10.8953C1.22717 12.436 1.12795 12.8581 1.06994 13.4043C0.977425 14.2758 1.14362 14.8464 1.63185 15.3332C2.11297 15.8129 2.68999 16.0037 3.64811 15.9999C4.26048 15.9975 4.51954 15.9571 5.03231 15.7841C5.52126 15.6191 6.51457 15.2331 6.55376 15.1928C6.58654 15.1591 6.79352 14.328 6.77403 14.3084C6.76903 14.3033 6.67142 14.3335 6.55708 14.3753C5.97209 14.5894 5.2721 14.6344 4.87636 14.4832C4.66742 14.4033 4.56811 14.3109 4.47401 14.1085C4.41699 13.9859 4.4088 13.9129 4.41088 13.5451C4.41414 12.9676 4.48267 12.6525 5.0303 10.697C5.52557 8.92842 5.58134 8.70191 5.63519 8.24004C5.76231 7.14963 5.6319 6.61702 5.10994 6.09528C4.90966 5.89506 4.78486 5.79976 4.61022 5.7135C4.09459 5.45892 3.47291 5.36749 2.76358 5.44189Z" fill="#B50909"/></g><defs><filter id="filter0_i_331_2116" x="0" y="0" width="7" height="19" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="3"/><feGaussianBlur stdDeviation="1.5"/><feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend mode="normal" in2="shape" result="effect1_innerShadow_331_2116"/></filter></defs></svg><!-- <img loading="lazy" src="img/i.svg" class="image" width="7" height="16"> --></div></div></div></div><div class="about__right"><h2 class="section-title about__title">PartsPoint — 3 года в сфере продажи автозапчастей</h2><div class="about__long-text"><p class="about__text">На наших партнёрских складах <span>1 млн наименований автокомпонентов.</span> Это позволяет утром заказать, а вечером получить заказ. Низких цен мы добиваемся снижением издержек на склад и наличием товара.</p><p class="about__text">В магазине собраны <span>топ-100</span> лучших поставщиков автокомпонентов <span>от Сочи до Владивостока</span>. Покупая у нас, вы покупаете у официального дилера указанного бренда. В нашем ассортименте есть оригинальные компоненты таких марок, как:</p><p class="about__text about__text--underline">AUDI, VOLKSWAGEN, MERSEDES, BMW</p><p class="about__text">А также китайские аналоги, которые отличаются крайне низкой ценой, например, MILES, ZEKKERT, STELLOX.</p><p class="about__text">Быстрая доставка, огромный ассортимент, приятные цены.</p><p class="about__text">Мы лидируем в Зернограде по онлайн заказам.</p></div><div class="about__short-text"><p class="about__text">Один магазин выполняет <span>от 10 заказов</span> в день со средним чеком <span>в 3000 руб.</span></p><p class="about__text">Некоторые клиенты могут заказать на сумму <span>более 100 000 руб.</span> за один раз.</p></div></div><div class="box-1"></div><div class="box-2"></div></div><div class="about__cards"><div class="about__card"><div class="about__card-text">Прибыль за 2021 год</div><div class="about__card-number">3,7 <span>млн руб</span></div></div><div class="about__card"><div class="about__card-text">Работаем с</div><div class="about__card-number">2018 <span>года</span></div></div><div class="about__card"><div class="about__card-text">Клиентов в год</div><div class="about__card-number">>4000</div></div></div></div><div class="gradient--bottom"></div></section><section class="review" id="review"><div class="container review__container"><h2 data-aos="fade-up" class="section-title review__title">примеры и результаты запуска тех, кто уже с нами</h2><div class="review__slider-wrapper"><div class="swiper-pagination"></div><div class="review__cards swiper"><div class="review__cards-wrapper swiper-wrapper"><div class="review__card swiper-slide"><picture><source srcset="img/review__image-1.avif" type="image/avif"><source srcset="img/review__image-1.webp" type="image/webp"><img loading="lazy" src="img/review__image-1.jpg" class="review__card-image" width="400" height="315" alt="Видео отзыв город Зерноград"></picture><div class="review__card-control"><div class="review__card-city">г. Зерноград <span>Партнер с 2019 года</span></div><!-- TODO: Добавить пути к видео --> <button class="btn-reset review__card-button" data-graph-path=""><span class="review__card-button--decor"></span></button></div><div class="review__card-total"><table class="review__card-table"><tr class="review__card-table-row"><td class="review__card-table-key">Прибыль за 2021 год</td><td class="review__card-table-value review__card-table-value--bold">3,1 млн Р</td></tr><tr class="review__card-table-row"><td class="review__card-table-key">Окупаемость</td><td class="review__card-table-value">6,5 мес.</td></tr></table></div></div><div class="review__card swiper-slide"><picture><source srcset="img/review__image-1.avif" type="image/avif"><source srcset="img/review__image-1.webp" type="image/webp"><img loading="lazy" src="img/review__image-1.jpg" class="review__card-image" width="400" height="315" alt="Видео отзыв город Зерноград"></picture><div class="review__card-control"><div class="review__card-city">г. Самара <span>Партнер с 2022 года</span></div><!-- TODO: Добавить пути к видео --> <button class="btn-reset review__card-button" data-graph-path=""></button></div><div class="review__card-total"><table class="review__card-table"><tr class="review__card-table-row"><td class="review__card-table-key">Плановая прибыль</td><td class="review__card-table-value review__card-table-value--bold">2,5 млн Р</td></tr><tr class="review__card-table-row"><td class="review__card-table-key">Окупаемость</td><td class="review__card-table-value">7,0 мес.</td></tr></table></div></div><div class="review__card swiper-slide"><picture><source srcset="img/review__image-1.avif" type="image/avif"><source srcset="img/review__image-1.webp" type="image/webp"><img loading="lazy" src="img/review__image-1.jpg" class="review__card-image" width="400" height="315" alt="Видео отзыв город Зерноград"></picture><div class="review__card-control"><div class="review__card-city">ст. Егорлыкская <span>Партнер с 2022 года</span></div><!-- TODO: Добавить пути к видео --> <button class="btn-reset review__card-button" data-graph-path=""></button></div><div class="review__card-total"><table class="review__card-table"><tr class="review__card-table-row"><td class="review__card-table-key">Плановая прибыль</td><td class="review__card-table-value review__card-table-value--bold">1,8 млн Р</td></tr><tr class="review__card-table-row"><td class="review__card-table-key">Окупаемость</td><td class="review__card-table-value">6,0 мес.</td></tr></table></div></div></div></div><div class="swiper-button-prev"><svg class="swiper-button-icon"><use xlink:href="img/sprite.svg#slider-prev"></use></svg></div><div class="swiper-button-next"><svg class="swiper-button-icon"><use xlink:href="img/sprite.svg#slider-next"></use></svg></div></div><div class="review__button-wrapper"><div class="button__wrapper review__button"><button class="btn-reset button button--main" data-graph-path="presentation">Хочу так же</button></div></div></div></section><section class="callback"><div class="container callback__container"><form class="callback__form form" action="#"><h2 data-aos="fade-up" class="section-title callback__title">Хотите открыть собственный бизнес и <span>выйти на прибыль за короткое время?</span></h2><div class="form__subtitle">Тогда Франшиза интернет-магазина автозапчастей для вас!</div><div class="form__text">Где вам удобнее получить коммерческое предложение?</div><div class="form__buttons"><label class="social-button__radio-wrapper"><input class="visually-hidden" type="radio" name="social" id="social-tg" checked="checked"> <span class="form__button social-button social-button--tg">Telegram <svg class="social-button__icon"><use xlink:href="img/sprite.svg#tg-button-icon"></use></svg></span></label> <label class="social-button__radio-wrapper"><input class="visually-hidden" type="radio" name="social" id="social-wa"> <span class="form__button social-button social-button--wa">Whatsapp <svg class="social-button__icon"><use xlink:href="img/sprite.svg#wa-button-icon"></use></svg></span></label></div><label class="form__input form__input--tel"><input class="form__input-field" type="tel" name="client-phone" id="client-phone" placeholder="+7 (___) ___-__-__"></label> <button class="btn-reset button button--main form__button-submit">Получить коммерческое предложение</button></form></div><div class="callback__decor-1"></div><div class="callback__decor-2"></div></section><section class="contacts" id="contact"><div class="container contacts__container"><div class="contacts__info"><div class="contacts__suptitle-wrapper"><div class="contacts__suptitle">Откройте магазин в своём городе всего за 3 дня</div></div><div class="contacts__info-block"><div class="contacts__title">Узнайте свободен ли ваш город</div><div class="contacts__info-list"><div class="contacts__info-item contacts__info-item--line contacts__info-item--phone"><div class="contacts__info-item-title">Звоните:</div><a class="contacts__info-phone" href="tel:+79281498075">8-928-149-80-75</a></div><div class="contacts__info-item contacts__info-item--line contacts__info-item--mail"><div class="contacts__info-item-title">Почта:</div><a class="contacts__info-mail" href="mailto:podand1979@yandex.ru">podand1979@yandex.ru</a></div><div class="contacts__info-item contacts__info-item--social"><div class="contacts__info-item-title">Пишите:</div><div class="contacts__info-item-social"><a class="contacts__info-item-social-link" href=""><svg class="contacts__info-item-icon contacts__info-item-icon--tg"><use xlink:href="img/sprite.svg#tg-icon-contacts"></use></svg> </a><a class="contacts__info-item-social-link contacts__info-item-icon--wa" href=""><svg class="contacts__info-item-icon"><use xlink:href="img/sprite.svg#wa-icon-contacts"></use></svg></a></div></div><div class="contacts__info-item contacts__info-item--adress"><div class="contacts__info-item-title">Центральный офис:</div><div class="contacts__info-name">PartsPoint</div><a class="contacts__info-adress" href="">г. Зерноград, Ростовская обл.</a></div></div><button class="btn-reset button button--main contacts__button" data-graph-path="city">Узнать</button></div></div></div></section></main><footer class="footer"><div class="container footer__container"><div class="footer__logo"><img loading="lazy" src="img/logo.svg" class="footer__logo logo" width="220" height="55" alt="PartsPoint"><div class="footer__copyright">© Все права защищены, 2022</div></div><div class="footer__links"><a class="footer__link" href="">Политика конфиденциальности</a> <a class="footer__link" href="">Договор публичной оферты</a></div><a class="footer__to-up btn-reset" href="#header"><svg class="footer__to-up-icon"><use xlink:href="img/sprite.svg#arrow-up"></use></svg> наверх</a></div></footer><section class="modals"><div class="graph-modal"><div class="graph-modal__container modal modal--presentation" role="dialog" aria-modal="true" data-graph-target="presentation"><button class="js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button><div class="graph-modal__content modal__content"><form class="modal__form form" action="#" id="modal-presentation"><div class="form__subtitle">Высылаем презентацию и финансовую модель в течение 5 минут</div><label class="form__input form__input--name"><span class="form__input-label">Введите ваше имя</span> <input class="form__input-field" type="text" name="client-name" id="client-name-presentation" placeholder="Ваше имя"></label> <label class="form__input form__input--tel"><span class="form__input-label">Ваш телефон</span> <input class="form__input-field" type="tel" name="client-phone" id="client-phone-presentation" placeholder="+7 (___) ___-__-__"></label><div class="form__text">В каком мессенджере отправить файлы?</div><div class="form__buttons form__buttons--presentation"><label class="social-button__radio-wrapper"><input class="visually-hidden" type="radio" name="social" id="social-tg-presentation" checked="checked"> <span class="form__button social-button social-button--tg">Telegram <svg class="social-button__icon"><use xlink:href="img/sprite.svg#tg-button-icon"></use></svg></span></label> <label class="social-button__radio-wrapper"><input class="visually-hidden" type="radio" name="social" id="social-wa-presentation"> <span class="form__button social-button social-button--wa">Whatsapp <svg class="social-button__icon"><use xlink:href="img/sprite.svg#wa-button-icon"></use></svg></span></label></div><button class="btn-reset button button--main form__button-submit">Получить сейчас</button> <label class="form__checkbox"><input class="form__checkbox-input visually-hidden" type="checkbox" name="checkbox-rule" id="checkbox-rule-presentation" checked="checked"> <span class="form__checkbox-label">Вы соглашаетесь на условия обработки персональных данных</span></label></form></div></div><div class="graph-modal__container modal modal--business" role="dialog" aria-modal="true" data-graph-target="business"><button class="js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button><div class="graph-modal__content modal__content"><form class="modal__form form" action="#" id="modal-business"><div class="form__subtitle">Высылаем бизнес-план в течение 5 минут</div><label class="form__input form__input--name"><span class="form__input-label">Введите ваше имя</span> <input class="form__input-field" type="text" name="client-name" id="client-name-business" placeholder="Ваше имя"></label> <label class="form__input form__input--tel"><span class="form__input-label">Ваш телефон</span> <input class="form__input-field" type="tel" name="client-phone" id="client-phone-business" placeholder="+7 (___) ___-__-__"></label><div class="form__text">В каком мессенджере отправить файлы?</div><div class="form__buttons form__buttons--business"><label class="social-button__radio-wrapper"><input class="visually-hidden" type="radio" name="social" id="social-tg-business" checked="checked"> <span class="form__button social-button social-button--tg">Telegram <svg class="social-button__icon"><use xlink:href="img/sprite.svg#tg-button-icon"></use></svg></span></label> <label class="social-button__radio-wrapper"><input class="visually-hidden" type="radio" name="social" id="social-wa-business"> <span class="form__button social-button social-button--wa">Whatsapp <svg class="social-button__icon"><use xlink:href="img/sprite.svg#wa-button-icon"></use></svg></span></label></div><button class="btn-reset button button--main form__button-submit">Получить сейчас</button> <label class="form__checkbox"><input class="form__checkbox-input visually-hidden" type="checkbox" name="checkbox-rule" id="checkbox-rule-business" checked="checked"> <span class="form__checkbox-label">Вы соглашаетесь на условия обработки персональных данных</span></label></form></div></div><div class="graph-modal__container modal modal--consulting" role="dialog" aria-modal="true" data-graph-target="consulting"><button class="js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button><div class="graph-modal__content modal__content"><form class="modal__form form" action="#" id="modal-consulting"><div class="form__subtitle">Наш менеджер свяжется с вами<br>в течение 5 минут</div><label class="form__input form__input--name"><span class="form__input-label">Введите ваше имя</span> <input class="form__input-field" type="text" name="client-name" id="client-name-consulting" placeholder="Ваше имя"></label> <label class="form__input form__input--tel"><span class="form__input-label">Ваш телефон</span> <input class="form__input-field" type="tel" name="client-phone" id="client-phone-consulting" placeholder="+7 (___) ___-__-__"></label><div class="form__text">В каком мессенджере удобнее общаться?</div><div class="form__buttons form__buttons--consulting"><label class="social-button__radio-wrapper"><input class="visually-hidden" type="radio" name="social" id="social-tg-consulting" checked="checked"> <span class="form__button social-button social-button--tg">Telegram <svg class="social-button__icon"><use xlink:href="img/sprite.svg#tg-button-icon"></use></svg></span></label> <label class="social-button__radio-wrapper"><input class="visually-hidden" type="radio" name="social" id="social-wa-consulting"> <span class="form__button social-button social-button--wa">Whatsapp <svg class="social-button__icon"><use xlink:href="img/sprite.svg#wa-button-icon"></use></svg></span></label></div><button class="btn-reset button button--main form__button-submit">Проконсультироваться</button> <label class="form__checkbox"><input class="form__checkbox-input visually-hidden" type="checkbox" name="checkbox-rule" id="checkbox-rule-consulting" checked="checked"> <span class="form__checkbox-label">Вы соглашаетесь на условия обработки персональных данных</span></label></form></div></div><div class="graph-modal__container modal modal--city" role="dialog" aria-modal="true" data-graph-target="city"><button class="js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button><div class="graph-modal__content modal__content"><form class="modal__form form" action="#" id="modal-city"><div class="form__subtitle">Наш менеджер свяжется с вами<br>в течение 5 минут</div><label class="form__input form__input--name"><span class="form__input-label">Введите ваше имя</span> <input class="form__input-field" type="text" name="client-name" id="client-name-city" placeholder="Ваше имя"></label> <label class="form__input form__input--tel"><span class="form__input-label">Ваш телефон</span> <input class="form__input-field" type="tel" name="client-phone" id="client-phone-city" placeholder="+7 (___) ___-__-__"></label><div class="form__text">В каком мессенджере удобнее узнать?</div><div class="form__buttons form__buttons--city"><label class="social-button__radio-wrapper"><input class="visually-hidden" type="radio" name="social" id="social-tg-city" checked="checked"> <span class="form__button social-button social-button--tg">Telegram <svg class="social-button__icon"><use xlink:href="img/sprite.svg#tg-button-icon"></use></svg></span></label> <label class="social-button__radio-wrapper"><input class="visually-hidden" type="radio" name="social" id="social-wa-city"> <span class="form__button social-button social-button--wa">Whatsapp <svg class="social-button__icon"><use xlink:href="img/sprite.svg#wa-button-icon"></use></svg></span></label></div><button class="btn-reset button button--main form__button-submit">Узнать про мой город</button> <label class="form__checkbox"><input class="form__checkbox-input visually-hidden" type="checkbox" name="checkbox-rule" id="checkbox-rule-city" checked="checked"> <span class="form__checkbox-label">Вы соглашаетесь на условия обработки персональных данных</span></label></form></div></div></div></section></div></body></html>
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>PartsPoint</title>
+  <link rel="preload" href="fonts/SegoeUI.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SegoeUILight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SegoeUIBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SegoeUIBoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SegoeUIItalic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/SegoeUISemibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/BebasNeueBook.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/BebasNeueBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header" id="header">
+  <div class="container header__container">
+    <div class="header__info-wrapper">
+      <div class="header__logo-block">
+        <img loading="lazy" src="img/logo.svg" class="header__logo logo" width="220" height="55" alt="PartsPoint">
+        <span class="header__logo-text">Франшиза интернет-магазина автозапчастей</span>
+      </div>
+      <ul class="header__social social list-reset">
+        <li class="social__item">
+          <!-- TODO: Добавить ссылки на соцсети -->
+          <a class="social__link social__link--tg" href="">
+            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="14.2793" cy="14.2793" r="14.0006" stroke="#F2F1F1" stroke-width="0.557396"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3992 10.7408C9.21346 12.2477 5.7539 13.5019 5.71124 13.528C5.60787 13.5912 5.51184 13.7428 5.51172 13.8431C5.51153 13.9663 5.58807 14.1112 5.6879 14.1766C5.73717 14.2089 6.60083 14.5209 7.60718 14.87C8.61353 15.2191 9.45217 15.5196 9.47084 15.5378C9.48948 15.5561 9.81833 16.5164 10.2016 17.6718C10.5849 18.8273 10.9204 19.8169 10.9471 19.871C10.9739 19.925 11.0391 19.9939 11.0921 20.0241C11.2007 20.0858 11.4229 20.0968 11.5257 20.0455C11.5627 20.027 12.0438 19.6685 12.5949 19.2487C13.7982 18.3321 13.7579 18.3602 13.9209 18.326C14.1783 18.2721 14.2285 18.2996 15.7414 19.3239C18.3961 21.1214 18.2027 20.9982 18.3706 20.9982C18.5445 20.9982 18.6673 20.9267 18.7504 20.777C18.8333 20.6278 21.5352 8.45011 21.5116 8.33235C21.4755 8.15304 21.274 7.99752 21.0809 8.00003C21.0417 8.00053 17.5848 9.23385 13.3992 10.7408ZM18.0476 10.7186C18.0682 10.7378 18.0851 10.7749 18.0851 10.801C18.0851 10.8272 16.9349 11.8454 15.5291 13.0638C12.1097 16.0274 11.9744 16.1473 11.8833 16.2923C11.7628 16.4842 11.7165 16.6776 11.6091 17.4384C11.5528 17.8371 11.4911 18.167 11.4659 18.2043C11.42 18.2723 11.2903 18.2924 11.2088 18.2442C11.1856 18.2305 10.9828 17.6234 10.7581 16.8951C10.324 15.4883 10.2991 15.3651 10.4031 15.1412C10.4309 15.0814 10.4994 14.9922 10.5552 14.9431C10.6805 14.8329 17.8942 10.6844 17.9616 10.6839C17.9882 10.6837 18.0269 10.6993 18.0476 10.7186Z" fill="white"/>
+              </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--wa" href="">
+            <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.1041 7.44177C13.1045 7.53906 12.3507 7.75477 11.5332 8.17743C10.2851 8.82271 9.27726 9.84953 8.65414 11.1108C8.41474 11.5954 8.30192 11.8924 8.1768 12.3676C8.01906 12.9666 7.97313 13.3307 7.97171 13.9934C7.97101 14.3233 7.98462 14.6813 8.00319 14.8206C8.14433 15.8799 8.47701 16.7928 9.03339 17.6474L9.21883 17.9323L8.80689 19.1467C8.58031 19.8146 8.39851 20.3646 8.40289 20.369C8.40729 20.3734 8.97397 20.1971 9.66221 19.9772C10.3505 19.7574 10.9228 19.5775 10.934 19.5775C10.9453 19.5775 11.0515 19.6377 11.1701 19.7113C11.2887 19.785 11.5372 19.9176 11.7223 20.006C13.3962 20.806 15.3096 20.8744 17.0235 20.1957C18.9654 19.4267 20.4569 17.7444 20.9893 15.7225C21.1524 15.1032 21.1938 14.7638 21.1938 14.0451C21.1938 13.3264 21.1524 12.9869 20.9893 12.3676C20.3648 9.99572 18.461 8.15202 16.0587 7.59257C15.6551 7.49857 15.2351 7.45095 14.7255 7.44141C14.4407 7.43606 14.1611 7.43622 14.1041 7.44177ZM12.5252 10.5095C12.568 10.5317 12.6281 10.5947 12.6587 10.6494C12.7359 10.7875 13.3653 12.3013 13.3836 12.3928C13.407 12.51 13.2923 12.7091 13.035 12.9981C12.7664 13.2995 12.7087 13.3963 12.7326 13.505C12.776 13.7023 13.3748 14.4952 13.7437 14.8439C14.3161 15.385 15.1813 15.8988 15.5669 15.9266C15.7651 15.9409 15.8374 15.8849 16.1406 15.4818C16.2781 15.299 16.4248 15.1153 16.4666 15.0736C16.5665 14.9739 16.7147 14.9527 16.8809 15.0145C17.0942 15.0938 18.3978 15.7277 18.4893 15.7967L18.577 15.8627L18.5625 16.1366C18.5254 16.8398 18.2783 17.205 17.625 17.5225C17.0039 17.8244 16.5177 17.8161 15.5659 17.4876C14.2889 17.0468 13.6111 16.6258 12.6926 15.7029C12.233 15.2411 11.9064 14.8506 11.5329 14.3165C10.9173 13.4363 10.6813 12.7566 10.7515 12.0668C10.8079 11.5137 11.0014 11.1054 11.3923 10.7151C11.5814 10.5263 11.8289 10.4485 12.2013 10.4609C12.3593 10.4662 12.4751 10.4836 12.5252 10.5095Z" fill="white"/>
+              <circle cx="14.8135" cy="14.2793" r="14.0006" stroke="#F2F1F1" stroke-width="0.557396"/>
+              </svg>
+          </a>
+        </li>
+      </ul>
+      <a class="header__phone phone" href="tel:89281498075">8-928-149-80-75</a>
+    </div>
+    <button class="header__burger burger btn-reset" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+      <span class="burger__text">Меню</span>
+      <svg class="burger__icon">
+        <use xlink:href="img/sprite.svg#burger"></use>
+      </svg>
+    </button>
+    <div class="header__menu menu" data-menu aria-hidden="true">
+      <div class="menu__bg" data-menu-overlay></div>
+      <div class="menu__content">
+        <svg class="menu__close" data-menu-item>
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+        <nav class="menu__nav">
+          <div class="menu__title">Навигация по сайту</div>
+          <ul class="menu__list list-reset">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#advantages" data-menu-item>Почему выгодно</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#benefit" data-menu-item>Преимущества</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#cooperation" data-menu-item>Схема сотрудничества</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#calculator" data-menu-item>Калькулятор</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#about" data-menu-item>О компании</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#review" data-menu-item>Отзывы</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#contact" data-menu-item>Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu__col">
+          <div class="menu__contacts">
+            <div class="menu__title">Навигация по сайту</div>
+            <a class="menu__phone phone" href="tel:89281498075">8-928-149-80-75</a>
+          </div>
+          <div class="menu__social">
+            <div class="menu__title">Пишите в мессенджеры</div>
+            <div class="menu__social-text"><img loading="lazy" src="img/pulse.svg" class="menu__social-icon" width="16" height="16" alt="">Сейчас мы онлайн. Пишите</div>
+            <ul class="menu__social-list list-reset">
+              <li class="menu__social-item">
+                <!-- TODO: Добавить ссылки на соц сети -->
+                <a class="menu__social-link social-button social-button--tg" href="" target="_blank">
+                  Telegram
+                  <svg class="social-button__icon">
+                    <use xlink:href="img/sprite.svg#tg-button-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="menu__social-item">
+                <!-- TODO: Добавить ссылки на соц сети -->
+                <a class="menu__social-link social-button social-button--wa" href="" target="_blank">
+                  Whatsapp
+                  <svg class="social-button__icon">
+                    <use xlink:href="img/sprite.svg#wa-button-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__mail">
+            <div class="menu__title">Почта</div>
+            <a class="menu__mail-link" href="mailto:podand1979@yandex.ru">podand1979@yandex.ru</a>
+          </div>
+          <div class="button__wrapper menu__button">
+            <button class="btn-reset button button--main" data-graph-path="presentation">
+              Скачать презентацию <span>и финансовую модель</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="hero">
+  <div class="container hero__container">
+    <div class="hero__text-block">
+      <h1 data-aos="fade-up" class="hero__title">Открой <span>интернет-магазин автозапчастей</span> в своём городе за 3 дня и начни зарабатывать от 2 млн. в год</h1>
+      <div class="hero__image-block">
+        <picture>
+          <source media="(max-width: 768px)" srcset="img/hero-image-mobile.avif" type="image/avif">
+          <source media="(max-width: 768px)" srcset="img/hero-image-mobile.webp" type="image/webp">
+          <source srcset="img/hero-image.avif" type="image/avif">
+          <source srcset="img/hero-image.webp" type="image/webp">
+          <source media="(max-width: 768px)" srcset="img/hero-image-mobile.png">
+          <img loading="lazy" src="img/hero-image.png" class="hero__image" width="1010" height="761" alt="Изображение владельца компании">
+        </picture>
+      </div>
+      <div class="hero__card-list">
+        <div class="hero__card">
+          <img loading="lazy" src="img/hero__card-icon-1.svg" class="hero__card-icon" width="55" height="55" alt="">
+          <div class="hero__card-title">Чистая прибыль от <span>150 000 руб</span> в месяц</div>
+        </div>
+        <div class="hero__card">
+          <img loading="lazy" src="img/hero__card-icon-2.svg" class="hero__card-icon" width="55" height="55" alt="">
+          <div class="hero__card-title hero__card-title--fixed">Окупаемость <span>7 месяцев</span>
+           </div>
+        </div>
+        <div class="hero__card">
+          <img loading="lazy" src="img/hero__card-icon-3.svg" class="hero__card-icon" width="55" height="55" alt="">
+          <div class="hero__card-title">Средняя маржа <span>60%</span>
+          </div>
+        </div>
+      </div>
+      <div class="button__wrapper hero__button">
+        <button class="btn-reset button button--main" data-graph-path="presentation">
+          Скачать презентацию <span>и финансовую модель</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="detail-1"></div>
+  <div class="detail-2"></div>
+  <div class="detail-3"></div>
+  <div class="social-widget">
+    <button class="btn-reset social-widget__button">
+      <svg class="social-widget__icon">
+        <use xlink:href="img/sprite.svg#social-button"></use>
+      </svg>
+    </button>
+    <ul class="list-reset social-widget__list">
+      <li class="social-widget__item">
+        <a class="social-widget__link social-widget__link--phone" href="">
+          <svg class="social-widget__link-icon">
+            <use xlink:href="img/sprite.svg#social-button-phone"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-widget__item">
+        <a class="social-widget__link social-widget__link--wa" href="">
+          <svg class="social-widget__link-icon">
+            <use xlink:href="img/sprite.svg#social-button-wa"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-widget__item">
+        <a class="social-widget__link social-widget__link--tg" href="">
+          <svg class="social-widget__link-icon">
+            <use xlink:href="img/sprite.svg#social-button-tg"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="advantages" id="advantages">
+  <div class="container advantages__container">
+    <h2 data-aos="fade-up" class="section-title advantages__title">Почему франшиза магазина автозапчастей — это выгодный бизнес</h2>
+    <div class="advantages__list">
+      <div class="advantages__col advantages__col--second">
+        <div class="advantages__item">
+          <div class="advantages__number">2</div>
+          <h3 class="advantages__item-title">Постоянно растущий спрос на запчасти.</h3>
+          <div class="advantages__item-descr">Выгоднее ремонтировать, чем покупать новый.</div>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__number">3</div>
+          <h3 class="advantages__item-title">Бизнес не зависит от сезона. </h3>
+          <div class="advantages__item-descr">Ремонт требуется круглый год.</div>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__number">4</div>
+          <h3 class="advantages__item-title">Автоматизация всех процессов</h3>
+        </div>
+      </div>
+      <div class="advantages__col advantages__col--first">
+        <div class="advantages__item">
+          <div class="advantages__number">1</div>
+          <h3 class="advantages__item-title">Вы получаете уже полностью готовый бизнес</h3>
+        </div>
+        <div class="advantages__image-block">
+          <picture>
+            <source srcset="img/advantages-book.avif" type="image/avif">
+            <source srcset="img/advantages-book.webp" type="image/webp">
+            <img loading="lazy" src="img/advantages-book.png" class="advantages__image" width="650" height="545" alt="">
+          </picture>
+          <div class="pdf-icon__wrapper">
+            <div class="pdf-icon">PDF</div>
+          </div>
+        </div>
+      </div>
+      <div class="advantages__col advantages__col--third">
+        <div class="advantages__item">
+          <div class="advantages__number">5</div>
+          <h3 class="advantages__item-title">Закупочные цены с дилерской скидкой
+            </h3>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__number">6</div>
+          <h3 class="advantages__item-title">Средний годовой оборот одной точки 11 880 000 руб.</h3>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__number">7</div>
+          <h3 class="advantages__item-title">Средний чек 3000 руб</h3>
+        </div>
+        <div class="advantages__item">
+          <div class="advantages__number">8</div>
+          <h3 class="advantages__item-title">Более 4000 клиентов в год</h3>
+        </div>
+      </div>
+    </div>
+    <div class="advantages__button-wrapper">
+      <div class="button__wrapper advantages__button">
+        <button class="btn-reset button button--main" data-graph-path="business">
+          Скачать бизнес-план
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="advantages__decor-1"></div>
+  <div class="advantages__decor-2"></div>
+</section>
+
+      <section class="benefit" id="benefit">
+  <div class="container benefit__container">
+    <h2 data-aos="fade-up" class="section-title benefit__title">Что даём вам именно мы, преимущества франшизы </h2>
+    <div class="benefit__list">
+      <div class="benefit__item">
+        <div class="benefit__item-image">
+          <picture>
+            <source srcset="img/benefit-image-1.avif" type="image/avif">
+            <source srcset="img/benefit-image-1.webp" type="image/webp">
+            <img loading="lazy" src="img/benefit-image-1.png" class="benefit__image" width="432" height="270" alt="Помогаем в открытии розничного магазина">
+          </picture>
+        </div>
+        <div class="benefit__item-text">
+          <h3 class="benefit__item-title">Помогаем в открытии розничного магазина </h3>
+          <ul class="benefit__item-list list-reset">
+            <li class="benefit__item-list-item">консультируем по подбору расположения торговой точки,</li>
+            <li class="benefit__item-list-item">предоставляем готовый дизайн магазина,</li>
+            <li class="benefit__item-list-item">подбираем и обучаем персонал,</li>
+            <li class="benefit__item-list-item">помогаем с подбором торгового оборудования,</li>
+            <li class="benefit__item-list-item">помогаем с оформлением контрольно-кассового оборудования,</li>
+            <li class="benefit__item-list-item">предоставляем макеты рекламной продукции</li>
+          </ul>
+        </div>
+      </div>
+      <div class="benefit__item">
+        <div class="benefit__item-image">
+          <picture>
+            <source srcset="img/benefit-image-2.avif" type="image/avif">
+            <source srcset="img/benefit-image-2.webp" type="image/webp">
+            <img loading="lazy" src="img/benefit-image-2.png" class="benefit__image" width="432" height="270" alt="Настраиваем онлайн-магазин и рекламу">
+          </picture>
+        </div>
+        <div class="benefit__item-text">
+          <h3 class="benefit__item-title">Настраиваем онлайн-магазин и рекламу</h3>
+          <ul class="benefit__item-list list-reset">
+            <li class="benefit__item-list-item">вы получаете полностью готовый к работе интернет-магазин,</li>
+            <li class="benefit__item-list-item">программный комплекс позволяет вам и клиентам видеть складские остатки товара,</li>
+            <li class="benefit__item-list-item">простой и удобный интерфейс,</li>
+            <li class="benefit__item-list-item">быстрый доступ к истории заказов, информации о клиентах и поставщиках,</li>
+            <li class="benefit__item-list-item">моментальные рассылки по клиентской базе</li>
+          </ul>
+        </div>
+      </div>
+      <div class="benefit__item">
+        <div class="benefit__item-image">
+          <picture>
+            <source srcset="img/benefit-image-3.avif" type="image/avif">
+            <source srcset="img/benefit-image-3.webp" type="image/webp">
+            <img loading="lazy" src="img/benefit-image-3.png" class="benefit__image" width="432" height="270" alt="Обучаем персонал, оказываем постоянную поддержку и сопровождение">
+          </picture>
+        </div>
+        <div class="benefit__item-text">
+          <h3 class="benefit__item-title">Обучаем персонал, оказываем постоянную поддержку и сопровождение</h3>
+          <ul class="benefit__item-list list-reset">
+            <li class="benefit__item-list-item">бесплатное обучение,</li>
+            <li class="benefit__item-list-item">фирменная корпоративная одежда,</li>
+            <li class="benefit__item-list-item">настройка корпоративной электронной почты</li>
+          </ul>
+        </div>
+      </div>
+      <div class="benefit__item">
+        <div class="benefit__item-image">
+          <picture>
+            <source srcset="img/benefit-image-4.avif" type="image/avif">
+            <source srcset="img/benefit-image-4.webp" type="image/webp">
+            <img loading="lazy" src="img/benefit-image-4.png" class="benefit__image" width="432" height="270" alt="Настраиваем онлайн-магазин и рекламу">
+          </picture>
+        </div>
+        <div class="benefit__item-text">
+          <h3 class="benefit__item-title">Настраиваем онлайн-магазин и рекламу</h3>
+          <ul class="benefit__item-list list-reset">
+            <li class="benefit__item-list-item">размещаем контакты франчайзи на нашем официальном сайте partspoint.su,</li>
+            <li class="benefit__item-list-item">публикуем новости и материалы об открытии нового магазина на своих страницах в социальных сетях,</li>
+            <li class="benefit__item-list-item">помогаем в создании и оформлении своей страницы,</li>
+            <li class="benefit__item-list-item">оказываем маркетинговую поддержку</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="benefit__footer">
+      <div class="benefit__footer-left">
+        <div class="benefit__footer-subtitle">Самостоятельный запуск магазина обойдётся Вам минимум</div>
+        <div class="benefit__footer-income">в 1,1 млн. рублей/год</div>
+        <div class="benefit__footer-warning">
+          <picture>
+            <source srcset="img/benefits-detail.avif" type="image/avif">
+            <source srcset="img/benefits-detail.webp" type="image/webp">
+            <img loading="lazy" src="img/benefits-detail.png" class="benefit__footer-warning-image" width="125" height="138" alt="">
+          </picture>
+          <div class="benefit__footer-warning-text">При самостоятельной закупке можно вернуть далеко не весь товар и у вас со временем накопится куча никому не нужного товара.</div>
+        </div>
+      </div>
+      <div class="benefit__footer-right">
+        <h3 class="benefit__footer-title">Запуск по франшизе в 3 раза дешевле!</h3>
+        <ul class="list-reset benefit__footer-list">
+          <li class="benefit__footer-item">Учитывая тот факт, что <span class="benefit__footer-text--red">к сетевым компаниям поставщики намного более лояльны</span>, чем к розничным магазинам, с нами выгоднее за счёт того, что вы будете закупать товар с дополнительной скидкой.</li>
+          <li class="benefit__footer-item">У нас поставщики <span class="benefit__footer-text--red">забирают абсолютно всё, включая электротовары.</span></li>
+        </ul>
+        <div class="benefit__footer-checklist">
+          <div class="benefit__footer-checklist-item">Открываем магазин <span class="benefit__footer-text--red">под ключ.</span></div>
+          <div class="benefit__footer-checklist-item">Отвечаем <span class="benefit__footer-text--red">на все вопросы.</span></div>
+          <div class="benefit__footer-checklist-item">Помогаем и поддерживаем <span class="benefit__footer-text--red">на всех этапах.</span></div>
+          <div class="benefit__footer-checklist-item">А главное выводим магазин
+            на прибыль <span class="benefit__footer-text--red">за короткое время.</span></div>
+        </div>
+      </div>
+      <div class="wheel-2"></div>
+    </div>
+    <div class="benefit__button">
+      <span class="benefit__button-text">Посмотреть и сравнить все траты можно
+        в специальной таблице нашей презентации</span>
+      <div class="button__wrapper">
+        <button class="btn-reset button button--main" data-graph-path="presentation">
+          Смотреть презентацию
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="wheel-1"></div>
+</section>
+
+      <section class="cooperation" id="cooperation">
+  <div class="container cooperation__container">
+    <h2 data-aos="fade-up" class="section-title cooperation__title">Схема сотрудничества</h2>
+    <ul class="list-reset cooperation__grid">
+      <li class="cooperation__grid-item cooperation__grid-item--1">
+        <span class="cooperation__grid-item-number">01</span>
+        <img loading="lazy" src="img/cooperation__grid-image-1.svg" class="cooperation__grid-image" width="60" height="60" alt="">
+        <h3 class="cooperation__grid-item-title">Вы оставляете заявку</h3>
+      </li>
+      <li class="cooperation__grid-item cooperation__grid-item--2">
+        <span class="cooperation__grid-item-number">02</span>
+        <img loading="lazy" src="img/cooperation__grid-image-2.svg" class="cooperation__grid-image" width="60" height="60" alt="">
+        <h3 class="cooperation__grid-item-title">Знакомимся с Вами в zoom или при личной встрече</h3>
+      </li>
+      <li class="cooperation__grid-item cooperation__grid-item--3">
+        <span class="cooperation__grid-item-number">03</span>
+        <img loading="lazy" src="img/cooperation__grid-image-3.svg" class="cooperation__grid-image" width="60" height="60" alt="">
+        <h3 class="cooperation__grid-item-title">Подписываем соглашение о неразглашении</h3>
+      </li>
+      <li class="cooperation__grid-item cooperation__grid-item--4">
+        <span class="cooperation__grid-item-number">04</span>
+        <img loading="lazy" src="img/cooperation__grid-image-4.svg" class="cooperation__grid-image" width="60" height="60" alt="">
+        <h3 class="cooperation__grid-item-title">Предоставляем Вам подробный бизнес-план</h3>
+      </li>
+      <li class="cooperation__grid-item cooperation__grid-item--5">
+        <span class="cooperation__grid-item-number">05</span>
+        <img loading="lazy" src="img/cooperation__grid-image-5.svg" class="cooperation__grid-image" width="60" height="60" alt="">
+        <h3 class="cooperation__grid-item-title">Подписываем договор</h3>
+      </li>
+      <li class="cooperation__grid-item cooperation__grid-item--6">
+        <span class="cooperation__grid-item-number">06</span>
+        <img loading="lazy" src="img/cooperation__grid-image-6.svg" class="cooperation__grid-image" width="60" height="60" alt="">
+        <h3 class="cooperation__grid-item-title">Проводим обучение и аттестацию персонала</h3>
+      </li>
+      <li class="cooperation__grid-item cooperation__grid-item--7">
+        <span class="cooperation__grid-item-number">07</span>
+        <img loading="lazy" src="img/cooperation__grid-image-7.svg" class="cooperation__grid-image" width="60" height="60" alt="">
+        <h3 class="cooperation__grid-item-title">Вы начинаете зарабатывать</h3>
+      </li>
+    </ul>
+  </div>
+  <div class="cooperation__decor-1"></div>
+  <div class="cooperation__decor-2"></div>
+</section>
+
+      <section class="calculator" id="calculator">
+  <div class="container calculator__container">
+    <h2 data-aos="fade-up" class="section-title calculator__title">Рассчитайте вашу прибыль с помощью калькулятора</h2>
+    <div class="calculator__slider">
+      <div class="calculator__slider-title">Выберите количество клиентов в день</div>
+      <div class="calculator__slider-body" id="slider-days"></div>
+    </div>
+    <div class="calculator__slider">
+      <div class="calculator__slider-title">Выберите период, мес</div>
+      <div class="calculator__slider-body" id="slider-mounth"></div>
+    </div>
+    <div class="calculator__block">
+      <div class="calculator__text"><strong>Чистая прибыль</strong> за выбранный период с учетом всех расходов:</div>
+      <div class="calculator__total">
+        <div class="calculator__total-number">1 100 000</div>
+        <span class="calculator__total-text">руб</span>
+      </div>
+      <div class="calculator__note">*Предварительный расчет</div>
+      <div class="calculator__small-text">Свяжитесь с нами для консультации, чтобы мы могли точнее рассчитать вашу выгоду с учетом всех нюансов</div>
+      <div class="button__wrapper calculator__button">
+        <button class="btn-reset button button--main" data-graph-path="consulting">
+          Проконсультироваться
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="calculator__decor-1"></div>
+  <div class="calculator__decor-2"></div>
+</section>
+
+      <section class="about" id="about">
+  <div class="gradient"></div>
+  <div class="container about__container">
+    <div class="about__content">
+      <div class="about__left">
+        <picture>
+          <source srcset="img/about__hero.avif" type="image/avif">
+          <source srcset="img/about__hero.webp" type="image/webp">
+          <img loading="lazy" src="img/about__hero.png" class="about__director-image" width="550" height="1035" alt="Фотография Директора франшизы">
+        </picture>
+        <div class="about__director-name">
+          <div class="about__name">Андрей поддубный</div>
+          <span class="about__position">Владелец франшизы PartsPoint</span>
+        </div>
+        <div class="about__video-block">
+          <!-- TODO: Добавить ссылку на ВК -->
+          <div class="about__video-descr">Посмотрите полезное видео на нашей
+            страничке <a class="about__video-link" href="#">Вконтакте</a>
+          </div>
+          <!-- TODO: Ссылка на модалку с видео -->
+          <button class="btn-reset about__video-button" data-graph-path="" aria-label="Открыть полезное видео">
+            <img loading="lazy" src="img/about__video-button.jpg" class="about__video-image" width="178" height="178" alt="Превью видео">
+          </button>
+        </div>
+        <div class="about__slogan">
+          <img loading="lazy" src="img/signature.svg" class="about__signature" width="96" height="93" alt="Подпись владельца франшизы">
+          <div class="about__slogan-text">Главный лозунг нашего интернет-магазина: «У нас есть всё для Вашего авто, привезём быстро по разумным ценам».</div>
+          <div class="pdf-icon__wrapper">
+            <div class="pdf-icon">
+              <svg width="7" height="16" viewBox="0 0 7 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_i_331_2116)">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.64359 0.0248653C3.91676 0.179543 3.31739 0.693527 3.11904 1.33227C3.04154 1.58181 3.02751 2.01796 3.08859 2.27767C3.22617 2.86248 3.73336 3.39944 4.3476 3.61052C4.67335 3.72247 5.14963 3.74889 5.48504 3.67365C6.36013 3.47731 7 2.72277 7 1.88719C7 1.36848 6.83638 0.978657 6.46016 0.601134C6.18223 0.322264 6.0133 0.21491 5.66545 0.0961007C5.40611 0.00752591 4.89309 -0.0282483 4.64359 0.0248653ZM2.76358 5.44189C2.26558 5.49413 1.64566 5.67337 0.695028 6.03997L0.209345 6.22729L0.0995085 6.66961C0.0391124 6.91289 -0.00542418 7.11686 0.000534745 7.1229C0.0065247 7.12891 0.166578 7.08328 0.356239 7.02143C0.979567 6.81824 1.58859 6.80125 1.95888 6.9768C2.22287 7.10193 2.34462 7.3901 2.34456 7.88946C2.34447 8.36451 2.23249 8.85612 1.65985 10.8953C1.22717 12.436 1.12795 12.8581 1.06994 13.4043C0.977425 14.2758 1.14362 14.8464 1.63185 15.3332C2.11297 15.8129 2.68999 16.0037 3.64811 15.9999C4.26048 15.9975 4.51954 15.9571 5.03231 15.7841C5.52126 15.6191 6.51457 15.2331 6.55376 15.1928C6.58654 15.1591 6.79352 14.328 6.77403 14.3084C6.76903 14.3033 6.67142 14.3335 6.55708 14.3753C5.97209 14.5894 5.2721 14.6344 4.87636 14.4832C4.66742 14.4033 4.56811 14.3109 4.47401 14.1085C4.41699 13.9859 4.4088 13.9129 4.41088 13.5451C4.41414 12.9676 4.48267 12.6525 5.0303 10.697C5.52557 8.92842 5.58134 8.70191 5.63519 8.24004C5.76231 7.14963 5.6319 6.61702 5.10994 6.09528C4.90966 5.89506 4.78486 5.79976 4.61022 5.7135C4.09459 5.45892 3.47291 5.36749 2.76358 5.44189Z" fill="#B50909"/>
+                </g>
+                <defs>
+                <filter id="filter0_i_331_2116" x="0" y="0" width="7" height="19" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="3"/>
+                <feGaussianBlur stdDeviation="1.5"/>
+                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="shape" result="effect1_innerShadow_331_2116"/>
+                </filter>
+                </defs>
+                </svg>
+
+              <!-- <img loading="lazy" src="img/i.svg" class="image" width="7" height="16"> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about__right">
+        <h2 class="section-title about__title">PartsPoint — 3 года в сфере продажи автозапчастей</h2>
+        <div class="about__long-text">
+          <p class="about__text">На наших партнёрских складах <span>1 млн наименований автокомпонентов.</span> Это позволяет утром заказать, а вечером получить заказ. Низких цен мы добиваемся снижением издержек на склад и наличием товара.</p>
+          <p class="about__text">В магазине собраны <span>топ-100</span> лучших поставщиков автокомпонентов <span>от Сочи до Владивостока</span>. Покупая у нас, вы покупаете у официального дилера указанного бренда. В нашем ассортименте есть оригинальные компоненты таких марок, как:</p>
+          <p class="about__text about__text--underline">AUDI, VOLKSWAGEN, MERSEDES, BMW</p>
+          <p class="about__text">А также китайские аналоги, которые отличаются крайне низкой ценой, например, MILES, ZEKKERT, STELLOX.</p>
+          <p class="about__text">Быстрая доставка, огромный ассортимент, приятные цены.</p>
+          <p class="about__text">Мы лидируем в Зернограде по онлайн заказам.</p>
+        </div>
+        <div class="about__short-text">
+          <p class="about__text">Один магазин выполняет <span>от 10 заказов</span> в день со средним чеком <span>в 3000 руб.</span></p>
+          <p class="about__text">Некоторые клиенты могут заказать на сумму <span>более 100 000 руб.</span> за один раз.</p>
+        </div>
+      </div>
+      <div class="box-1"></div>
+      <div class="box-2"></div>
+    </div>
+    <div class="about__cards">
+      <div class="about__card">
+        <div class="about__card-text">Прибыль за 2021 год</div>
+        <div class="about__card-number">3,7 <span>млн руб</span></div>
+      </div>
+      <div class="about__card">
+        <div class="about__card-text">Работаем с</div>
+        <div class="about__card-number">2018 <span>года</span></div>
+      </div>
+      <div class="about__card">
+        <div class="about__card-text">Клиентов в год</div>
+        <div class="about__card-number">>4000</div>
+      </div>
+    </div>
+  </div>
+  <div class="gradient--bottom"></div>
+</section>
+
+      <section class="review" id="review">
+  <div class="container review__container">
+    <h2 data-aos="fade-up" class="section-title review__title">примеры и результаты запуска тех, кто уже с нами</h2>
+    <div class="review__slider-wrapper">
+      <div class="swiper-pagination"></div>
+      <div class="review__cards swiper">
+
+        <div class="review__cards-wrapper swiper-wrapper">
+          <div class="review__card swiper-slide">
+            <picture>
+              <source srcset="img/review__image-1.avif" type="image/avif">
+              <source srcset="img/review__image-1.webp" type="image/webp">
+              <img loading="lazy" src="img/review__image-1.jpg" class="review__card-image" width="400" height="315" alt="Видео отзыв город Зерноград">
+            </picture>
+            <div class="review__card-control">
+              <div class="review__card-city">
+                г. Зерноград
+                <span>Партнер с 2019 года</span>
+              </div>
+              <!-- TODO: Добавить пути к видео -->
+              <button class="btn-reset review__card-button" data-graph-path="">
+                <span class="review__card-button--decor"></span>
+              </button>
+            </div>
+            <div class="review__card-total">
+              <table class="review__card-table">
+                <tr class="review__card-table-row">
+                  <td class="review__card-table-key">Прибыль за 2021 год </td>
+                  <td class="review__card-table-value review__card-table-value--bold">3,1 млн Р</td>
+                </tr>
+                <tr class="review__card-table-row">
+                  <td class="review__card-table-key">Окупаемость</td>
+                  <td class="review__card-table-value">6,5 мес.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="review__card swiper-slide">
+            <picture>
+              <source srcset="img/review__image-1.avif" type="image/avif">
+              <source srcset="img/review__image-1.webp" type="image/webp">
+              <img loading="lazy" src="img/review__image-1.jpg" class="review__card-image" width="400" height="315" alt="Видео отзыв город Зерноград">
+            </picture>
+            <div class="review__card-control">
+              <div class="review__card-city">
+                г. Самара
+                <span>Партнер с 2022 года</span>
+              </div>
+              <!-- TODO: Добавить пути к видео -->
+              <button class="btn-reset review__card-button" data-graph-path=""></button>
+            </div>
+            <div class="review__card-total">
+              <table class="review__card-table">
+                <tr class="review__card-table-row">
+                  <td class="review__card-table-key">Плановая прибыль </td>
+                  <td class="review__card-table-value review__card-table-value--bold">2,5 млн Р</td>
+                </tr>
+                <tr class="review__card-table-row">
+                  <td class="review__card-table-key">Окупаемость</td>
+                  <td class="review__card-table-value">7,0 мес.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="review__card swiper-slide">
+            <picture>
+              <source srcset="img/review__image-1.avif" type="image/avif">
+              <source srcset="img/review__image-1.webp" type="image/webp">
+              <img loading="lazy" src="img/review__image-1.jpg" class="review__card-image" width="400" height="315" alt="Видео отзыв город Зерноград">
+            </picture>
+            <div class="review__card-control">
+              <div class="review__card-city">
+                ст. Егорлыкская
+                <span>Партнер с 2022 года</span>
+              </div>
+              <!-- TODO: Добавить пути к видео -->
+              <button class="btn-reset review__card-button" data-graph-path=""></button>
+            </div>
+            <div class="review__card-total">
+              <table class="review__card-table">
+                <tr class="review__card-table-row">
+                  <td class="review__card-table-key">Плановая прибыль </td>
+                  <td class="review__card-table-value review__card-table-value--bold">1,8 млн Р</td>
+                </tr>
+                <tr class="review__card-table-row">
+                  <td class="review__card-table-key">Окупаемость</td>
+                  <td class="review__card-table-value">6,0 мес.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev">
+        <svg class="swiper-button-icon">
+          <use xlink:href="img/sprite.svg#slider-prev"></use>
+        </svg>
+      </div>
+      <div class="swiper-button-next">
+        <svg class="swiper-button-icon">
+          <use xlink:href="img/sprite.svg#slider-next"></use>
+        </svg>
+      </div>
+    </div>
+    <div class="review__button-wrapper">
+      <div class="button__wrapper review__button">
+        <button class="btn-reset button button--main" data-graph-path="presentation">
+          Хочу так же
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="callback">
+  <div class="container callback__container">
+    <form class="callback__form form" action="#">
+      <h2 data-aos="fade-up" class="section-title callback__title">Хотите открыть собственный бизнес и <span>выйти на прибыль за короткое время?</span></h2>
+      <div class="form__subtitle">Тогда Франшиза интернет-магазина автозапчастей для вас!</div>
+      <div class="form__text">Где вам удобнее получить коммерческое предложение?</div>
+      <div class="form__buttons">
+        <label class="social-button__radio-wrapper">
+          <input class="visually-hidden" type="radio" name="social" id="social-tg" checked>
+          <span class="form__button social-button social-button--tg">
+            Telegram
+            <svg class="social-button__icon">
+              <use xlink:href="img/sprite.svg#tg-button-icon"></use>
+            </svg>
+          </span>
+        </label>
+        <label class="social-button__radio-wrapper">
+          <input class="visually-hidden" type="radio" name="social" id="social-wa">
+          <span class="form__button social-button social-button--wa">
+            Whatsapp
+            <svg class="social-button__icon">
+              <use xlink:href="img/sprite.svg#wa-button-icon"></use>
+            </svg>
+          </span>
+        </label>
+      </div>
+      <label class="form__input form__input--tel">
+        <input class="form__input-field" type="tel" name="client-phone" id="client-phone" placeholder="+7 (___) ___-__-__">
+      </label>
+      <button class="btn-reset button button--main form__button-submit">
+        Получить коммерческое предложение
+      </button>
+    </form>
+  </div>
+  <div class="callback__decor-1"></div>
+  <div class="callback__decor-2"></div>
+</section>
+
+      <section class="contacts" id="contact">
+  <div class="container contacts__container">
+    <div class="contacts__info">
+      <div class="contacts__suptitle-wrapper">
+        <div class="contacts__suptitle">Откройте магазин в своём городе всего за 3 дня</div>
+      </div>
+      <div class="contacts__info-block">
+        <div class="contacts__title">Узнайте свободен ли ваш город</div>
+        <div class="contacts__info-list">
+          <div class="contacts__info-item contacts__info-item--line contacts__info-item--phone">
+            <div class="contacts__info-item-title">Звоните:</div>
+            <a class="contacts__info-phone" href="tel:+79281498075">
+              8-928-149-80-75
+            </a>
+          </div>
+          <div class="contacts__info-item contacts__info-item--line contacts__info-item--mail">
+            <div class="contacts__info-item-title">Почта:</div>
+            <a class="contacts__info-mail" href="mailto:podand1979@yandex.ru">podand1979@yandex.ru</a>
+          </div>
+          <div class="contacts__info-item contacts__info-item--social">
+            <div class="contacts__info-item-title">Пишите:</div>
+            <div class="contacts__info-item-social">
+              <a class="contacts__info-item-social-link" href="">
+                <svg class="contacts__info-item-icon contacts__info-item-icon--tg">
+                  <use xlink:href="img/sprite.svg#tg-icon-contacts"></use>
+                </svg>
+              </a>
+              <a class="contacts__info-item-social-link contacts__info-item-icon--wa" href="">
+                <svg class="contacts__info-item-icon">
+                  <use xlink:href="img/sprite.svg#wa-icon-contacts"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="contacts__info-item contacts__info-item--adress">
+            <div class="contacts__info-item-title">Центральный офис:</div>
+            <div class="contacts__info-name">PartsPoint</div>
+            <a class="contacts__info-adress" href="">г. Зерноград, Ростовская обл.</a>
+          </div>
+        </div>
+        <button class="btn-reset button button--main contacts__button" data-graph-path="city">
+          Узнать
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__logo">
+      <img loading="lazy" src="img/logo.svg" class="footer__logo logo" width="220" height="55" alt="PartsPoint">
+      <div class="footer__copyright">© Все права защищены, 2022</div>
+    </div>
+    <div class="footer__links">
+      <a class="footer__link" href="">Политика конфиденциальности</a>
+      <a class="footer__link" href="">Договор публичной оферты</a>
+    </div>
+    <a class="footer__to-up btn-reset" data-scroll href="#header">
+      <svg class="footer__to-up-icon">
+        <use xlink:href="img/sprite.svg#arrow-up"></use>
+      </svg>
+      наверх
+    </a>
+  </div>
+</footer>
+
+    <section class="modals">
+  <div class="graph-modal">
+    <div class="graph-modal__container modal modal--presentation" role="dialog" aria-modal="true" data-graph-target="presentation">
+      <button class="js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content modal__content">
+        <form class="modal__form form" action="#" id="modal-presentation">
+          <div class="form__subtitle">Высылаем презентацию и финансовую модель в течение 5 минут</div>
+          <label class="form__input form__input--name">
+            <span class="form__input-label">Введите ваше имя</span>
+            <input class="form__input-field" type="text" name="client-name" id="client-name-presentation" placeholder="Ваше имя">
+          </label>
+          <label class="form__input form__input--tel">
+            <span class="form__input-label">Ваш телефон</span>
+            <input class="form__input-field" type="tel" name="client-phone" id="client-phone-presentation" placeholder="+7 (___) ___-__-__">
+          </label>
+          <div class="form__text">В каком мессенджере отправить файлы?</div>
+          <div class="form__buttons form__buttons--presentation">
+            <label class="social-button__radio-wrapper">
+              <input class="visually-hidden" type="radio" name="social" id="social-tg-presentation" checked>
+              <span class="form__button social-button social-button--tg">
+                Telegram
+                <svg class="social-button__icon">
+                  <use xlink:href="img/sprite.svg#tg-button-icon"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="social-button__radio-wrapper">
+              <input class="visually-hidden" type="radio" name="social" id="social-wa-presentation">
+              <span class="form__button social-button social-button--wa">
+                Whatsapp
+                <svg class="social-button__icon">
+                  <use xlink:href="img/sprite.svg#wa-button-icon"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+          <button class="btn-reset button button--main form__button-submit">
+            Получить сейчас
+          </button>
+          <label class="form__checkbox">
+            <input class="form__checkbox-input visually-hidden" type="checkbox" name="checkbox-rule" id="checkbox-rule-presentation" checked>
+            <span class="form__checkbox-label">Вы соглашаетесь на условия обработки персональных данных</span>
+          </label>
+        </form>
+      </div>
+    </div>
+    <div class="graph-modal__container modal modal--business" role="dialog" aria-modal="true" data-graph-target="business">
+      <button class="js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content modal__content">
+        <form class="modal__form form" action="#" id="modal-business">
+          <div class="form__subtitle">Высылаем бизнес-план в течение 5 минут</div>
+          <label class="form__input form__input--name">
+            <span class="form__input-label">Введите ваше имя</span>
+            <input class="form__input-field" type="text" name="client-name" id="client-name-business" placeholder="Ваше имя">
+          </label>
+          <label class="form__input form__input--tel">
+            <span class="form__input-label">Ваш телефон</span>
+            <input class="form__input-field" type="tel" name="client-phone" id="client-phone-business" placeholder="+7 (___) ___-__-__">
+          </label>
+          <div class="form__text">В каком мессенджере отправить файлы?</div>
+          <div class="form__buttons form__buttons--business">
+            <label class="social-button__radio-wrapper">
+              <input class="visually-hidden" type="radio" name="social" id="social-tg-business" checked>
+              <span class="form__button social-button social-button--tg">
+                Telegram
+                <svg class="social-button__icon">
+                  <use xlink:href="img/sprite.svg#tg-button-icon"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="social-button__radio-wrapper">
+              <input class="visually-hidden" type="radio" name="social" id="social-wa-business">
+              <span class="form__button social-button social-button--wa">
+                Whatsapp
+                <svg class="social-button__icon">
+                  <use xlink:href="img/sprite.svg#wa-button-icon"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+          <button class="btn-reset button button--main form__button-submit">
+            Получить сейчас
+          </button>
+          <label class="form__checkbox">
+            <input class="form__checkbox-input visually-hidden" type="checkbox" name="checkbox-rule" id="checkbox-rule-business" checked>
+            <span class="form__checkbox-label">Вы соглашаетесь на условия обработки персональных данных</span>
+          </label>
+        </form>
+      </div>
+    </div>
+    <div class="graph-modal__container modal modal--consulting" role="dialog" aria-modal="true" data-graph-target="consulting">
+      <button class="js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content modal__content">
+        <form class="modal__form form" action="#" id="modal-consulting">
+          <div class="form__subtitle">Наш менеджер свяжется с вами<br>в течение 5 минут</div>
+          <label class="form__input form__input--name">
+            <span class="form__input-label">Введите ваше имя</span>
+            <input class="form__input-field" type="text" name="client-name" id="client-name-consulting" placeholder="Ваше имя">
+          </label>
+          <label class="form__input form__input--tel">
+            <span class="form__input-label">Ваш телефон</span>
+            <input class="form__input-field" type="tel" name="client-phone" id="client-phone-consulting" placeholder="+7 (___) ___-__-__">
+          </label>
+          <div class="form__text">В каком мессенджере удобнее общаться?</div>
+          <div class="form__buttons form__buttons--consulting">
+            <label class="social-button__radio-wrapper">
+              <input class="visually-hidden" type="radio" name="social" id="social-tg-consulting" checked>
+              <span class="form__button social-button social-button--tg">
+                Telegram
+                <svg class="social-button__icon">
+                  <use xlink:href="img/sprite.svg#tg-button-icon"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="social-button__radio-wrapper">
+              <input class="visually-hidden" type="radio" name="social" id="social-wa-consulting">
+              <span class="form__button social-button social-button--wa">
+                Whatsapp
+                <svg class="social-button__icon">
+                  <use xlink:href="img/sprite.svg#wa-button-icon"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+          <button class="btn-reset button button--main form__button-submit">
+            Проконсультироваться
+          </button>
+          <label class="form__checkbox">
+            <input class="form__checkbox-input visually-hidden" type="checkbox" name="checkbox-rule" id="checkbox-rule-consulting" checked>
+            <span class="form__checkbox-label">Вы соглашаетесь на условия обработки персональных данных</span>
+          </label>
+        </form>
+      </div>
+    </div>
+    <div class="graph-modal__container modal modal--city" role="dialog" aria-modal="true" data-graph-target="city">
+      <button class="js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content modal__content">
+        <form class="modal__form form" action="#" id="modal-city">
+          <div class="form__subtitle">Наш менеджер свяжется с вами<br>в течение 5 минут</div>
+          <label class="form__input form__input--name">
+            <span class="form__input-label">Введите ваше имя</span>
+            <input class="form__input-field" type="text" name="client-name" id="client-name-city" placeholder="Ваше имя">
+          </label>
+          <label class="form__input form__input--tel">
+            <span class="form__input-label">Ваш телефон</span>
+            <input class="form__input-field" type="tel" name="client-phone" id="client-phone-city" placeholder="+7 (___) ___-__-__">
+          </label>
+          <div class="form__text">В каком мессенджере удобнее узнать?</div>
+          <div class="form__buttons form__buttons--city">
+            <label class="social-button__radio-wrapper">
+              <input class="visually-hidden" type="radio" name="social" id="social-tg-city" checked>
+              <span class="form__button social-button social-button--tg">
+                Telegram
+                <svg class="social-button__icon">
+                  <use xlink:href="img/sprite.svg#tg-button-icon"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="social-button__radio-wrapper">
+              <input class="visually-hidden" type="radio" name="social" id="social-wa-city">
+              <span class="form__button social-button social-button--wa">
+                Whatsapp
+                <svg class="social-button__icon">
+                  <use xlink:href="img/sprite.svg#wa-button-icon"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+          <button class="btn-reset button button--main form__button-submit">
+            Узнать про мой город
+          </button>
+          <label class="form__checkbox">
+            <input class="form__checkbox-input visually-hidden" type="checkbox" name="checkbox-rule" id="checkbox-rule-city" checked>
+            <span class="form__checkbox-label">Вы соглашаетесь на условия обработки персональных данных</span>
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </div>
+</body>
+
+</html>

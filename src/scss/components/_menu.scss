@@ -33,8 +33,9 @@
     box-shadow: 0 4px 32px rgb(31 26 26 / 90%);
     color: rgb(var(--color-white));
     background: rgb(31 26 26 / 90%);
+    opacity: 0;
     transform: translateX(100%);
-    transition: transform var(--transition-time);
+    transition: all 0.6s ease;
 
     @include mq(768) {
       flex-flow: column nowrap;
@@ -228,6 +229,7 @@
     visibility: visible;
 
     .menu__content {
+      opacity: 1;
       transform: translateX(0);
     }
   }

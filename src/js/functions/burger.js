@@ -18,12 +18,12 @@ const linkScroll = new SmoothScroll();
       menu?.setAttribute('aria-hidden', 'false');
       burger?.setAttribute('aria-expanded', 'true');
       burger?.setAttribute('aria-label', 'Закрыть меню');
-      disableScroll();
+      // disableScroll();
     } else {
       menu?.setAttribute('aria-hidden', 'true');
       burger?.setAttribute('aria-expanded', 'false');
       burger?.setAttribute('aria-label', 'Открыть меню');
-      enableScroll();
+      // enableScroll();
     }
   });
 
@@ -32,7 +32,7 @@ const linkScroll = new SmoothScroll();
     burger?.setAttribute('aria-label', 'Открыть меню');
     burger.classList.remove('burger--active');
     menu.classList.remove('menu--active');
-    enableScroll();
+    // enableScroll();
   });
 
   menuItems?.forEach(el => {
@@ -41,8 +41,8 @@ const linkScroll = new SmoothScroll();
       burger?.setAttribute('aria-label', 'Открыть меню');
       burger.classList.remove('burger--active');
       menu.classList.remove('menu--active');
-      enableScroll();
-      linkScroll.animateScroll(el.getAttribute('href'));
+      // enableScroll();
+      linkScroll.animateScroll(document.querySelector(el.getAttribute('href')));
     });
   });
 })();
