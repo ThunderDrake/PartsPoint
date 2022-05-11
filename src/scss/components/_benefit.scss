@@ -43,18 +43,24 @@
 
     &-list-item {
       position: relative;
-      padding-left: 15px;
+      display: flex;
+      align-items: baseline;
 
       &::before {
         content: "";
-        position: absolute;
+        position: relative;
         left: 0;
-        top: 55%;
+        top: -5px;
+        flex-shrink: 0;
+        margin-right: 15px;
         border-radius: 50%;
         width: 5px;
         height: 5px;
         background-color: currentcolor;
-        transform: translateY(-50%);
+
+        @include mq(825) {
+          top: -3px;
+        }
       }
     }
 
@@ -227,6 +233,10 @@
         border-radius: 50%;
         width: 8px;
         height: 8px;
+
+        @include mq(460) {
+          top: 6px;
+        }
       }
 
       &:not(:last-child) {
