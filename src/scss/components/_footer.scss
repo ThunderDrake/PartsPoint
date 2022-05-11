@@ -19,15 +19,14 @@
   }
 
   &__logo {
-    margin-bottom: 12px;
+    img {
+      margin-bottom: 0;
+      width: 220px;
+    }
   }
 
   &__copyright {
-    margin-left: 52px;
-
-    @include mq(600) {
-      margin-left: 0;
-    }
+    margin-bottom: 15px;
   }
 
   &__links {
@@ -42,7 +41,6 @@
   }
 
   &__link {
-    margin-bottom: 14px;
     text-decoration: underline;
     color: inherit;
   }
@@ -65,7 +63,7 @@
     }
 
     @include mq(600) {
-      justify-self: center;
+      justify-self: right;
       grid-column: 2;
       grid-row: 1;
     }
