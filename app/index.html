@@ -485,12 +485,11 @@
           <span class="about__position">Владелец франшизы PartsPoint</span>
         </div>
         <div class="about__video-block">
-          <!-- TODO: Добавить ссылку на ВК -->
+          <!-- TODO: Заменить ссылку на видео в вк -->
           <div class="about__video-descr">Посмотрите полезное видео на нашей
-            страничке <a class="about__video-link" href="#">Вконтакте</a>
+            страничке <a class="about__video-link" href="https://vk.com/video-212532463_456239030">Вконтакте</a>
           </div>
-          <!-- TODO: Ссылка на модалку с видео -->
-          <button class="btn-reset about__video-button" data-graph-path="" aria-label="Открыть полезное видео">
+          <button class="btn-reset about__video-button" data-graph-path="video-about" aria-label="Открыть полезное видео">
             <img loading="lazy" src="img/about__video-button.jpg" class="about__video-image" width="178" height="178" alt="Превью видео">
           </button>
         </div>
@@ -578,7 +577,7 @@
                 <span>Партнер с 2019 года</span>
               </div>
               <!-- TODO: Добавить пути к видео -->
-              <button class="btn-reset review__card-button" data-graph-path="">
+              <button class="btn-reset review__card-button" data-graph-path="video-review-1">
                 <span class="review__card-button--decor"></span>
               </button>
             </div>
@@ -607,7 +606,7 @@
                 <span>Партнер с 2022 года</span>
               </div>
               <!-- TODO: Добавить пути к видео -->
-              <button class="btn-reset review__card-button" data-graph-path=""></button>
+              <button class="btn-reset review__card-button" data-graph-path="video-review-1"></button>
             </div>
             <div class="review__card-total">
               <table class="review__card-table">
@@ -634,7 +633,7 @@
                 <span>Партнер с 2022 года</span>
               </div>
               <!-- TODO: Добавить пути к видео -->
-              <button class="btn-reset review__card-button" data-graph-path=""></button>
+              <button class="btn-reset review__card-button" data-graph-path="video-review-1"></button>
             </div>
             <div class="review__card-total">
               <table class="review__card-table">
@@ -954,6 +953,23 @@
             <span class="form__checkbox-label">Вы соглашаетесь на условия обработки персональных данных</span>
           </label>
         </form>
+      </div>
+    </div>
+    <!-- TODO: Заменить ролик в вк -->
+    <div class="graph-modal__container modal" role="dialog" aria-modal="true" data-graph-target="video-about">
+      <button class="js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content modal__content">
+        <div class="modal__video">
+          <iframe src="https://vk.com/video_ext.php?oid=-212532463&id=456239030&hash=db1ed06cda561b30" width="640" height="360" frameborder="0" allowfullscreen="1" allow="encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="graph-modal__container modal" role="dialog" aria-modal="true" data-graph-target="video-review-1">
+      <button class="js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content modal__content">
+        <div class="modal__video">
+          <iframe width="100%" height="430" src="https://www.youtube.com/embed/lL0NTd2n4lU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
