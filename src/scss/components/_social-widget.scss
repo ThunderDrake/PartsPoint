@@ -132,6 +132,10 @@
       opacity: 1;
       visibility: visible;
       transform: translateY(-50%);
+
+      @include mq(768) {
+        transform: translateY(-65%);
+      }
     }
 
     .social-widget__link {
