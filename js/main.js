@@ -530,9 +530,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var smooth_scroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! smooth-scroll */ "./node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js");
 /* harmony import */ var smooth_scroll__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(smooth_scroll__WEBPACK_IMPORTED_MODULE_0__);
 
+var socialWidget = document.querySelector('.social-widget');
+var footer = document.querySelector('.footer');
 var scroll = new (smooth_scroll__WEBPACK_IMPORTED_MODULE_0___default())('a[href*="#"]', {
   speed: 2500,
   speedAsDuration: true
+});
+
+function checkOffset() {
+  function getRectTop(el) {
+    var rect = el.getBoundingClientRect();
+    return rect.top;
+  }
+
+  if (getRectTop(socialWidget) + document.body.scrollTop + socialWidget.offsetHeight >= getRectTop(footer) + document.body.scrollTop - 10) {
+    // socialWidget.style.position = 'absolute';
+    socialWidget.style.bottom = footer.offsetHeight + 10 + 'px';
+  }
+
+  if (document.body.scrollTop + window.innerHeight < getRectTop(footer) + document.body.scrollTop) {
+    socialWidget.style.position = 'fixed'; // restore when you scroll up
+
+    socialWidget.style.bottom = '5%';
+  }
+}
+
+document.addEventListener("scroll", function () {
+  checkOffset();
 });
 
 /***/ }),
