@@ -820,6 +820,13 @@ input[type=radio]:checked + .social-button--wa .social-button__icon {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+@media (max-width: 768px) {
+  .social-widget:hover .social-widget__list {
+    -webkit-transform: translateY(-65%);
+    -ms-transform: translateY(-65%);
+    transform: translateY(-65%);
+  }
+}
 .social-widget:hover .social-widget__link {
   -webkit-transform: translateY(0);
   -ms-transform: translateY(0);
