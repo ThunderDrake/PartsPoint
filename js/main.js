@@ -459,7 +459,17 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var graph_modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! graph-modal */ "./node_modules/graph-modal/src/graph-modal.js");
 
-var modal = new graph_modal__WEBPACK_IMPORTED_MODULE_0__["default"]();
+var modal = new graph_modal__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  isOpen: function isOpen(modal) {
+    var modalVideo = modal.modalContainer.querySelector('.modal__video').getAttribute('data-video');
+    var iframe = modal.modalContainer.querySelector('iframe');
+    iframe.setAttribute('src', modalVideo);
+  },
+  isClose: function isClose(modal) {
+    var iframe = modal.modalContainer.querySelector('iframe');
+    iframe.setAttribute('src', '');
+  }
+});
 
 /***/ }),
 
