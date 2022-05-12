@@ -461,13 +461,17 @@ __webpack_require__.r(__webpack_exports__);
 
 var modal = new graph_modal__WEBPACK_IMPORTED_MODULE_0__["default"]({
   isOpen: function isOpen(modal) {
-    var modalVideo = modal.modalContainer.querySelector('.modal__video').getAttribute('data-video');
-    var iframe = modal.modalContainer.querySelector('iframe');
-    iframe.setAttribute('src', modalVideo);
+    if (modal.modalContainer.querySelector('.modal__video')) {
+      var modalVideo = modal.modalContainer.querySelector('.modal__video').getAttribute('data-video');
+      var iframe = modal.modalContainer.querySelector('iframe');
+      iframe.setAttribute('src', modalVideo);
+    }
   },
   isClose: function isClose(modal) {
-    var iframe = modal.modalContainer.querySelector('iframe');
-    iframe.setAttribute('src', '');
+    if (modal.modalContainer.querySelector('iframe')) {
+      var iframe = modal.modalContainer.querySelector('iframe');
+      iframe.setAttribute('src', '');
+    }
   }
 });
 
