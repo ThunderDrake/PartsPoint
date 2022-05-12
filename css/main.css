@@ -783,6 +783,11 @@ input[type=radio]:checked + .social-button--wa .social-button__icon {
   fill: #960b1b;
 }
 .social-widget__list {
+  position: absolute;
+  visibility: hidden;
+  left: 0;
+  right: 0;
+  top: -100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -794,14 +799,12 @@ input[type=radio]:checked + .social-button--wa .social-button__icon {
   -ms-flex-align: center;
   align-items: center;
   padding-bottom: 20px;
-  -webkit-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  transform: translateY(50%);
-  -webkit-transition: -webkit-transform var(--transition-time);
-  transition: -webkit-transform var(--transition-time);
-  -o-transition: transform var(--transition-time);
-  transition: transform var(--transition-time);
-  transition: transform var(--transition-time), -webkit-transform var(--transition-time);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: all var(--transition-time);
+  -o-transition: all var(--transition-time);
+  transition: all var(--transition-time);
 }
 @media (max-width: 768px) {
   .social-widget__list {
@@ -811,10 +814,11 @@ input[type=radio]:checked + .social-button--wa .social-button__icon {
   }
 }
 .social-widget:hover .social-widget__list {
+  visibility: visible;
   opacity: 1;
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .social-widget:hover .social-widget__link {
   -webkit-transform: translateY(0);
