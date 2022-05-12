@@ -110,12 +110,17 @@
   }
 
   &__list {
+    position: absolute;
+    visibility: hidden;
+    left: 0;
+    right: 0;
+    top: -100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
-    transform: translateY(50%);
-    transition: transform var(--transition-time);
+    transform: translateY(0);
+    transition: all var(--transition-time);
 
     @include mq(768) {
       transform: translateY(40%);
@@ -124,8 +129,9 @@
 
   &:hover {
     .social-widget__list {
+      visibility: visible;
       opacity: 1;
-      transform: translateY(0);
+      transform: translateY(-50%);
     }
 
     .social-widget__link {
